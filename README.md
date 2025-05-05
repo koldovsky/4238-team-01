@@ -34,8 +34,6 @@ Add the data-proofer-ignore attribute to any tag to ignore it from every check.
 - Olena Moroz
 - Maksym Khrapa 15
 - Kostantin Paholok
-- Dmytro Belevtsev
-- Vasylyna Kuliaba
 - Levko Sviatoslav 1
 - Dmytro Belevtsev 9, 18
 - Vasylyna Kuliaba
