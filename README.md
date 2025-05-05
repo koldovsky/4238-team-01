@@ -27,4 +27,12 @@ Add the data-proofer-ignore attribute to any tag to ignore it from every check.
 ```html
 <a href="https://notareallink" data-proofer-ignore>Not checked.</a>
 ```
-Hello everyone, I'm Vasylyna. Good luck to us.
+
+
+## Team
+- Dmytro Gerasymenko
+- Olena Moroz
+- Maksym Khrapa
+- Kostantin Paholok
+- Dmytro Belevtsev
+- Vasylyna Kuliaba
