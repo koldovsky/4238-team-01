@@ -34,10 +34,6 @@ Add the data-proofer-ignore attribute to any tag to ignore it from every check.
 - Olena Moroz
 - Maksym Khrapa 15
 - Kostantin Paholok
-<<<<<<< HEAD
-- Dmytro Belevtsev
+- Dmytro Belevtsev 9, 18
 - Vasylyna Kuliaba
 - Oleksandr Kozynets
-=======
-- Dmytro Belevtsev 9, 18
->>>>>>> 9cf86dc (BelevtsevD #9, 19)
