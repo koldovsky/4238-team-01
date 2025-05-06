@@ -37,3 +37,4 @@ Add the data-proofer-ignore attribute to any tag to ignore it from every check.
 - Dmytro Belevtsev
 - Vasylyna Kuliaba
 - Oleksandr Kozynets
+- Mahlovanyi Mykhailo 4,8
