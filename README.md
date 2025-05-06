@@ -30,14 +30,12 @@ Add the data-proofer-ignore attribute to any tag to ignore it from every check.
 
 
 ## Team
-- Dmytro Gerasymenko
-- Olena Moroz
+- Dmytro Gerasymenko 7, 11, 20
+- Olena Moroz 5, 6, 12
 - Maksym Khrapa 15
-- Kostantin Paholok
-- Dmytro Belevtsev
-- Vasylyna Kuliaba
+- Kostantin Paholok 2, 19
 - Levko Sviatoslav 1
 - Dmytro Belevtsev 9, 18
-- Vasylyna Kuliaba
-- Oleksandr Kozynets
+- Vasylyna Kuliaba 16
+- Oleksandr Kozynets 21, 17
 - Anastasiia Dubachynska 3, 14
