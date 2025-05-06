@@ -36,6 +36,6 @@ Add the data-proofer-ignore attribute to any tag to ignore it from every check.
 - Kostantin Paholok
 - Levko Sviatoslav 1
 - Dmytro Belevtsev 9, 18
-- Vasylyna Kuliaba
+- Vasylyna Kuliaba 16
 - Oleksandr Kozynets
 - Anastasiia Dubachynska 3, 14
