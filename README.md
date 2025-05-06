@@ -33,9 +33,9 @@ Add the data-proofer-ignore attribute to any tag to ignore it from every check.
 - Dmytro Gerasymenko 7, 11, 20
 - Olena Moroz 5, 6, 12
 - Maksym Khrapa 15
-- Kostantin Paholok
+- Kostantin Paholok 2, 19
 - Levko Sviatoslav 1
 - Dmytro Belevtsev 9, 18
 - Vasylyna Kuliaba 16
-- Oleksandr Kozynets
+- Oleksandr Kozynets 21
 - Anastasiia Dubachynska 3, 14
