@@ -31,7 +31,7 @@ Add the data-proofer-ignore attribute to any tag to ignore it from every check.
 
 ## Team
 - Dmytro Gerasymenko 7, 11, 20
-- Olena Moroz
+- Olena Moroz 5, 6, 12
 - Maksym Khrapa 15
 - Kostantin Paholok
 - Levko Sviatoslav 1
