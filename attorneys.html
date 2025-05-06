@@ -3,28 +3,139 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Attorneys</title>
+    <title>Attorneys Page: Law Firm Template</title>
     <link
       rel="shortcut icon"
       href="https://placekitten.com/96/139"
       type="image/x-icon"
     />
-    <script  
+    <script
       src="https://unpkg.com/htmx.org@1.9.10"
       integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
       crossorigin="anonymous"
     ></script>
   </head>
+
   <body>
     <header>
-      <nav data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="global.header-nav.partial.html"></nav>
-      <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="attorneys.header-hero.partial.html"></div>
-
+      <nav
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="global.header-nav.partial.html"
+      ></nav>
+      <div
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="attorneys.header-hero.partial.html"
+      ></div>
     </header>
-    <!-- <main>тут поле для коду хто брав собі дане завдання</main> -->
+
+    <main>
+      <div class="team__attorneys">
+        <article class="attorney">
+          <div class="attorney__image-wrapper">
+            <img
+              class="attorney__image"
+              src="img/attorneys/jane-clarberg.webp"
+              alt="Jane Clarberg, Managing Partner"
+              width="370"
+              loading="lazy"
+            />
+          </div>
+          <h4 class="attorney__name">Jane Clarberg</h4>
+          <p class="attorney__position">
+            <span>Managing Partner | 27 years of experience</span>
+          </p>
+        </article>
+
+        <article class="attorney">
+          <div class="attorney__image-wrapper">
+            <img
+              class="attorney__image"
+              src="img/attorneys/jeff-mutson.webp"
+              alt="Jeff Mutson, Senior Trial Attorney"
+              width="370"
+            />
+          </div>
+          <h4 class="attorney__name">Jeff Mutson</h4>
+          <p class="attorney__position">
+            <span>Senior Trial Attorney | 28 years of experience</span>
+          </p>
+        </article>
+
+        <article class="attorney">
+          <div class="attorney__image-wrapper">
+            <img
+              class="attorney__image"
+              src="img/attorneys/ann-fisher.webp"
+              alt="Ann Fisher, Managing Partner"
+              width="370"
+            />
+          </div>
+          <h4 class="attorney__name">Ann Fisher</h4>
+          <p class="attorney__position">
+            <span>Managing Partner | 12 years of experience</span>
+          </p>
+        </article>
+
+        <article class="attorney">
+          <div class="attorney__image-wrapper">
+            <img
+              class="attorney__image"
+              src="img/attorneys/helen-robertson.webp"
+              alt="Helen Robertson, Attorney"
+              width="370"
+            />
+          </div>
+          <h4 class="attorney__name">Helen Robertson</h4>
+          <p class="attorney__position">
+            <span>Attorney | 15 years of experience</span>
+          </p>
+        </article>
+
+        <article class="attorney">
+          <div class="attorney__image-wrapper">
+            <img
+              class="attorney__image"
+              src="img/attorneys/robert-guzman.webp"
+              alt="Robert Guzman, Attorney"
+              width="370"
+            />
+          </div>
+          <h4 class="attorney__name">Robert Guzman</h4>
+          <p class="attorney__position">
+            <span>Attorney | 20 years of experience</span>
+          </p>
+        </article>
+        
+        <article class="attorney">
+          <div class="attorney__image-wrapper">
+            <img
+              class="attorney__image"
+              src="img/attorneys/esther-bryant.webp"
+              alt="Esther Bryant, Senior Trial Attorney"
+              width="370"
+            />
+          </div>
+          <h4 class="attorney__name">Esther Bryant</h4>
+          <p class="attorney__position">
+            <span>Senior Trial Attorney | 10 years of experience</span>
+          </p>
+        </article>
+      </div>
+    </main>
+
     <footer>
-      <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="global.footer-contacts.partial.html"></section>
-      <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="global.footer-nav.partial.html"></section>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="global.footer-contacts.partial.html"
+      ></section>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="global.footer-nav.partial.html"
+      ></section>
     </footer>
   </body>
 </html>
