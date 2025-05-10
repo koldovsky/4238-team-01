@@ -40,4 +40,4 @@ Add the data-proofer-ignore attribute to any tag to ignore it from every check.
 - Vasylyna Kuliaba 16
 - Oleksandr Kozynets 21, 17
 - Anastasiia Dubachynska 3, 14
--Ivanna Chuba 10,13
+- Ivanna Chuba 10,13
