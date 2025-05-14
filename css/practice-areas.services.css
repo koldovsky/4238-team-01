@@ -1,0 +1,77 @@
+.practice-areas {
+    background-color: var(--background-color);
+}
+
+.practice-areas__list {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  max-width: 1288px;
+  margin: 0 auto;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.practice-areas__item {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+.practice-areas__item--reversed {
+  flex-direction: row-reverse;
+}
+
+.practice-areas__image {
+  width: 50%;
+  object-fit: cover;
+}
+
+.practice-areas__content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.practice-areas__heading {
+  font-family: var(--title-font);
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--title-color);
+}
+
+.practice-areas__text {
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+.practice-areas__list-items {
+  list-style: disc inside;
+  color: var(--text-color);
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.practice-areas__list-items li::marker {
+  color: var(--brand-color);
+}
+
+
+/*
+@media (max-width: 768px) {
+  .practice-areas__item,
+  .practice-areas__item--reversed {
+    flex-direction: column;
+  }
+
+  .practice-areas__image,
+  .practice-areas__content {
+    width: 100%;
+  }
+
+  .practice-areas__list {
+    gap: 40px;
+  }
+}
+  */

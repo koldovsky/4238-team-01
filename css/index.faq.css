@@ -1,5 +1,7 @@
 .faq {
   background: url(../img/global/alt-background.webp) center center / 200px repeat;
+  padding: 90px 30px;
+  -webkit-font-smoothing: antialiased;
 
   .faq__overline {
     color: var(--brand-color);
@@ -7,6 +9,7 @@
     font-size: 12px;
     text-align: left;
     text-transform: uppercase;
+    letter-spacing: 1.2px;
   }
 
   .faq__title {
