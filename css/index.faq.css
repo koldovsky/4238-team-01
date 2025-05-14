@@ -1,0 +1,24 @@
+.faq {
+    background: url(../img/global/alt-background.webp) center center / 200px repeat;
+}
+
+.faq__overline {
+    color: var(--brand-color);
+}
+
+.faq__title {
+    color: var(--title-color);
+    font-family: var(--title-font);
+}
+
+.faq__description {
+    color: var(--subtitle-color);
+}
+
+.faq__accordion-question {
+    color: var(--card-title-color);
+}
+
+.faq__accordion-answer {
+    color: var(--text-color);
+}
