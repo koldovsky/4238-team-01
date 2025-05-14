@@ -4,8 +4,6 @@
   display: flex;
   flex-wrap: wrap;
   padding: 30px 24px 40px;
-  line-height: 1.5;
-  font-weight: 600;
 }
 
 .footer-nav__column {
@@ -140,7 +138,7 @@
 
 .footer-nav__newsletter-button {
   padding: 0.75rem;
-  background-color:  var(--footer-back-ico-color);
+  background-color: var(--footer-back-ico-color);
   color: var(--title-alt-color);
   border: none;
   font-family: "Open Sans", sans-serif;
@@ -149,14 +147,12 @@
   font-size: 14px;
   height: 47.5px;
   width: 100%;
-
 }
 
 .footer-nav__newsletter-button:hover {
   background-color: var(--background-color);
   color: var(--title-color);
 }
-
 
 .footer-nav__divider {
   display: flex;
@@ -168,14 +164,18 @@
 .footer-nav__divider svg path {
   stroke: rgba(255, 255, 255, 0.2);
 }
-[footer-nav__bottom] {
-  width: 100%;
+
+.footer-nav__bottom-copyright {
+  display: flex;
+  margin-top: 1rem;
   text-align: center;
-  font-size: 0.9rem;
+  font-size: 14px;
   color: var(--title-alt-color);
 }
-
-[footer-nav__bottom] span {
-  display: block;
+.footer-nav__bottom-rights {
+  display: flex;
   margin-top: 1rem;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
 }
