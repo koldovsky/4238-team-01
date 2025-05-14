@@ -1,0 +1,24 @@
+.section-team {
+    background: url(../img/global/alt-background.webp) center center / 200px repeat, var(--alt-background-color);
+}
+
+.section-team__overline {
+    color: var(--brand-color);
+}
+
+.section-team__title {
+    color: var(--title-color);
+    font-family: var(--title-font);
+}
+
+.section-team__description {
+    color: var(--subtitle-color);
+}
+
+.section-team__attorney-name {
+    color: var(--card-title-color);
+}
+
+.section-team__attorney-position {
+    color: var(--text-color);
+}

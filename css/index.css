@@ -1,0 +1,9 @@
+@import "global.css";
+
+@import "index.cases.css";            /* Anastasiia Dubachynska #3 */
+@import "index.team.css";             /* Dmytro Gerasymenko #7 */
+@import "index.faq.css";              /* Dmytro Gerasymenko #11 */
+@import "index.contact-us.css";       /* Anastasiia Dubachynska #14 */
+
+@import "global.footer-contacts.css"; /* Maksym Khrapa #15 */
+@import "global.footer-nav.css";      /* Maksym Khrapa #15 */

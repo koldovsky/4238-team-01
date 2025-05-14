@@ -6,7 +6,7 @@
     <title>Attorneys Page: Law Firm Template</title>
     <link
       rel="shortcut icon"
-      href="https://placekitten.com/96/139"
+      href="img/global/favicon-c.png"
       type="image/x-icon"
     />
     <script
@@ -14,9 +14,11 @@
       integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="css/attorneys.css">
   </head>
 
   <body>
+    <!-- Sviatoslav Levko #1 -->
     <header>
       <nav
         data-hx-trigger="load"
@@ -30,101 +32,16 @@
       ></div>
     </header>
 
+    <!-- Dmytro Gerasymenko #20 -->
     <main>
-      <div class="team__attorneys">
-        <article class="team__attorney">
-          <div class="team__attorney-image-wrapper">
-            <img
-              class="team__attorney-image"
-              src="img/attorneys/jane-clarberg.webp"
-              alt="Jane Clarberg, Managing Partner"
-              width="370"
-              loading="lazy"
-            />
-          </div>
-          <h2 class="team__attorney-name">Jane Clarberg</h2>
-          <p class="team__attorney-position">
-            <span>Managing Partner | 27 years of experience</span>
-          </p>
-        </article>
-
-        <article class="team__attorney">
-          <div class="team__attorney-image-wrapper">
-            <img
-              class="team__attorney-image"
-              src="img/attorneys/jeff-mutson.webp"
-              alt="Jeff Mutson, Senior Trial Attorney"
-              width="370"
-            />
-          </div>
-          <h2 class="team__attorney-name">Jeff Mutson</h2>
-          <p class="team__attorney-position">
-            <span>Senior Trial Attorney | 28 years of experience</span>
-          </p>
-        </article>
-
-        <article class="team__attorney">
-          <div class="team__attorney-image-wrapper">
-            <img
-              class="team__attorney-image"
-              src="img/attorneys/ann-fisher.webp"
-              alt="Ann Fisher, Managing Partner"
-              width="370"
-            />
-          </div>
-          <h2 class="team__attorney-name">Ann Fisher</h2>
-          <p class="team__attorney-position">
-            <span>Managing Partner | 12 years of experience</span>
-          </p>
-        </article>
-
-        <article class="team__attorney">
-          <div class="team__attorney-image-wrapper">
-            <img
-              class="team__attorney-image"
-              src="img/attorneys/helen-robertson.webp"
-              alt="Helen Robertson, Attorney"
-              width="370"
-            />
-          </div>
-          <h2 class="team__attorney-name">Helen Robertson</h2>
-          <p class="team__attorney-position">
-            <span>Attorney | 15 years of experience</span>
-          </p>
-        </article>
-
-        <article class="team__attorney">
-          <div class="team__attorney-image-wrapper">
-            <img
-              class="team__attorney-image"
-              src="img/attorneys/robert-guzman.webp"
-              alt="Robert Guzman, Attorney"
-              width="370"
-            />
-          </div>
-          <h2 class="team__attorney-name">Robert Guzman</h2>
-          <p class="team__attorney-position">
-            <span>Attorney | 20 years of experience</span>
-          </p>
-        </article>
-        
-        <article class="team__attorney">
-          <div class="team__attorney-image-wrapper">
-            <img
-              class="team__attorney-image"
-              src="img/attorneys/esther-bryant.webp"
-              alt="Esther Bryant, Senior Trial Attorney"
-              width="370"
-            />
-          </div>
-          <h2 class="team__attorney-name">Esther Bryant</h2>
-          <p class="team__attorney-position">
-            <span>Senior Trial Attorney | 10 years of experience</span>
-          </p>
-        </article>
-      </div>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="attorneys.team.partial.html"
+      ></section>
     </main>
 
+    <!-- Maksym Khrapa #15 -->
     <footer>
       <section
         data-hx-trigger="load"

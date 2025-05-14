@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  /* max-width: 100vw; */
+  display: block;
+  max-width: 100%;
+}
+
+:root {
+  scroll-behavior: smooth;
+  --title-font: "Crimson Pro", serif;
+  font-family: "Open Sans", sans-serif;
+  --brand-color: #c39167;
+  --title-color: #3e4355;
+  --title-alt-color: #ffffff;
+  --subtitle-color: #545454;
+  --subtitle-alt-color: #c2c2c2;
+  --card-title-color: #575c71;
+  --text-color: #6c6c6d;
+  --text-alt-color: #bcbcbc;
+  --background-color: #ffffff;
+  --alt-background-color: #f5f5f5;
+}
