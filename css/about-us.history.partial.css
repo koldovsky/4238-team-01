@@ -1,21 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
-/* *,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-img {
-  display: block;
-  max-width: 100%;
-} */
+
 :root {
-  /* scroll-behavior: smooth; */
   --history__title-color: #c39167;
   --history__subtitle-color: #3e4355;
   --history__subtitle-text-color: #545454;
+  --history__timeline-year-border-color: var(--history__title-color);
+  --history__timeline-year-bg-color: #eeeded;
 }
 .history {
   display: grid;
@@ -39,7 +30,7 @@ img {
 .history__timeline-container {
   padding: 10%;
   height: 100%;
-  background-image: url("../img/about/about-us-history-bg.webp");
+  background-image: url("../img/global/alt-background.webp");
 }
 
 .history__title {
@@ -76,20 +67,17 @@ img {
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 1.5rem;
-  align-items: center;
+  place-items: center start;
   .history__timeline-year {
-    display: grid;
-    place-items: center;
+    align-content: center;
+    text-align: center;
     width: 64px;
     height: 64px;
-    background-color: #f1f1f1;
     border-radius: 50%;
-    border: 2px solid var(--history__title-color);
-    .history__year {
-      font-weight: bold;
-      color: #a36318;
-      font-size: 1rem;
-    }
+    font-weight: bold;
+    color: var(--history__title-color);
+    background-color: var(--history__timeline-year-bg-color);
+    border: 2px solid var(--history__timeline-year-border-color);
   }
 
   .history__timeline-description {

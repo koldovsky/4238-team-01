@@ -31,4 +31,6 @@ img {
   --footer-back-ico-color: #c39167;
   --footer-ico-color: #ffffff;
 
+  --button-text-color: #ffffff;
+  --button-alt-text-color: var(--brand-color);
 }
