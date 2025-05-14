@@ -27,4 +27,6 @@ img {
   --text-alt-color: #bcbcbc;
   --background-color: #ffffff;
   --alt-background-color: #f5f5f5;
+  --button-text-color: #ffffff;
+  --button-alt-text-color: var(--brand-color);
 }
