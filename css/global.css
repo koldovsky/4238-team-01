@@ -34,3 +34,8 @@ img {
   --button-text-color: #ffffff;
   --button-alt-text-color: var(--brand-color);
 }
+
+.section-container {
+  max-width: 1200px;
+  margin: auto;
+}
