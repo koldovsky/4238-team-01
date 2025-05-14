@@ -1,18 +1,27 @@
 .team {
   background: url(../img/global/alt-background.webp) center center / 200px repeat, var(--alt-background-color);
+  padding: 90px 0;
 
-  .team__attorney-name {
-    color: var(--card-title-color);
-    font-weight: 700;
-    font-size: 22px;
-    text-align: center;
-  }
+  .team__attorneys {
+    padding: 0 24px;
+    display: flex;
+    flex-direction: column;
 
-  .team__attorney-position {
-    color: var(--brand-color);
-    font-weight: 600;
-    font-size: 14px;
-    font-style: italic;
-    text-align: center;
+    .team__attorney-name {
+      color: var(--card-title-color);
+      font-weight: 700;
+      font-size: 22px;
+      text-align: center;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .team__attorney-position {
+      color: var(--brand-color);
+      font-weight: 600;
+      font-size: 14px;
+      font-style: italic;
+      text-align: center;
+      -webkit-font-smoothing: antialiased;
+    }
   }
 }
