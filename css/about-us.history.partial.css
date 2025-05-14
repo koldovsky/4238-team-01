@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+/* *,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+} */
+:root {
+  /* scroll-behavior: smooth; */
+  --history__title-color: #c39167;
+  --history__subtitle-color: #3e4355;
+  --history__subtitle-text-color: #545454;
+}
+.history {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+}
+
+/* Image container */
+
+.history__image-container {
+  width: 100%;
+  .history__image {
+    width: 100%;
+    height: 870px;
+    object-fit: cover;
+  }
+}
+
+/* Time line container */
+
+.history__timeline-container {
+  padding: 10%;
+  height: 100%;
+  background-image: url("../img/about/about-us-history-bg.webp");
+}
+
+.history__title {
+  font-size: 13px;
+  font-weight: bold;
+  font-family: "Open sans", sans-serif;
+  color: var(--history__title-color);
+  margin: 0;
+}
+
+.history__subtitle {
+  color: var(--history__subtitle-color);
+  padding-top: 5%;
+  padding-bottom: 5%;
+  font-size: 44px;
+  font-family: "Crimson pro", serif;
+}
+.history__subtitle-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  padding-bottom: 5%;
+  color: var(--history__subtitle-text-color);
+}
+
+.history__timeline {
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+  margin-top: 5%;
+}
+
+.history__timeline-element {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1.5rem;
+  align-items: center;
+  .history__timeline-year {
+    display: grid;
+    place-items: center;
+    width: 64px;
+    height: 64px;
+    background-color: #f1f1f1;
+    border-radius: 50%;
+    border: 2px solid var(--history__title-color);
+    .history__year {
+      font-weight: bold;
+      color: #a36318;
+      font-size: 1rem;
+    }
+  }
+
+  .history__timeline-description {
+    margin: 0;
+    font-style: italic;
+    font-size: 16px;
+    font-family: "Open sans", sans-serif;
+    color: #555;
+    line-height: 1.5;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .history {
+    grid-template-columns: 1fr;
+  }
+  .history__image-container {
+    width: 100%;
+  }
+}

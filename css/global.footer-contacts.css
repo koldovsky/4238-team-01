@@ -1,0 +1,121 @@
+/*.footer-contacts {
+  background-color: #3e4355;
+  padding-top: 90px;
+  padding-left: 24px;
+  padding-bottom: 10px;
+  padding-right: 24px;
+}
+.footer-contacts__list {
+
+}
+
+.footer-contacts__title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  color: #c39167;
+  text-transform: uppercase;
+}
+
+.footer-contacts__intro-title {
+  font-family: "Carimson Pro", serif;
+  font-size: 38px;
+  color: #ffffff;
+}*/
+.footer-contacts {
+  background-color: #3a3e4a;
+  color: #d7d7d7;
+  padding-top: 90px;
+  padding-left: 24px;
+  padding-bottom: 10px;
+  padding-right: 24px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.footer-contacts__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-contacts__intro {
+  flex: 1 1 1 1 100%;
+  max-width: 205px;
+}
+
+.footer-contacts__title {
+  text-transform: uppercase;
+  color: #d19465;
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+
+.footer-contacts__intro-title {
+  font-family: "Crimson Pro", serif;
+  font-size: 38px;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0 0 1rem;
+}
+
+.footer-contacts__intro-text {
+  font-size: 19px;
+  line-height: 1.5;
+  color: #c4c4c4;
+  font-weight: 500;
+}
+
+.footer-contacts__item {
+  flex: 1 1 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.footer-contacts__item-ico {
+  background-color: #d19465;
+  color: #ffffff;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-contacts__item-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+}
+
+.footer-contacts__item-text {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #c4c4c4;
+}
+
+.footer-contacts__link {
+  display: block;
+  color: #c4c4c4;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-contacts__link:hover {
+  color: #ffffff;
+}
+
+.footer-contacts__divider {
+  margin-top: 4rem;
+}
+
+.footer-contacts__divider svg path {
+  stroke: rgba(255, 255, 255, 0.2);
+}
+
