@@ -1,0 +1,101 @@
+.helping-clients {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  align-items: flex-start;
+  padding: 4rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+
+  .helping-clients__image-container {
+    flex: 1 1 40%;
+    width: 100%;
+    max-width: 500px;
+
+    .helping-clients__image {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .helping-clients__content {
+    flex: 1 1 50%;
+
+    .helping-clients__title {
+      font-size: 12px;
+      text-transform: uppercase;
+      color: var(--brand-color);
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      text-align: left;
+    }
+
+    .helping-clients__subtitle {
+      font-family: var(--title-font);
+      font-size: 38px;
+      font-weight: 600;
+      text-align: left;
+      color: var(--title-color);
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+
+      .helping-clients__highlight {
+        color: var(--brand-color);
+      }
+       
+    }
+    .helping-clients__description {
+      color: var(--subtitle-color);
+      font-size: 19px;
+      font-weight: 600;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+    .helping-clients__text {
+      font-size: 17px;
+      font-weight: 400px;
+      margin: 0 auto 40px;
+      text-align: left;
+      color: var(--text-color);
+    }
+    .helping-clients__features {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      
+
+      .helping-clients__feature-container {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        align-items: flex-start;
+      }
+        .helping-clients__feature-icon {
+          width: 50px;
+          height: 50px;
+          margin-bottom: 12px;
+        }
+        .helping-clients__feature-content {
+        display: flex;
+        flex-direction: column;
+        }
+
+        .helping-clients__feature-title {
+          font-size: 22px;
+          font-weight: 700;
+          margin-bottom: 6px;
+          color: var(--title-color);
+        }
+
+        .helping-clients__feature-text {
+          font-size: 17px;
+          color: var(--text-color);
+        }
+      }
+    }
+  }
+}
+
