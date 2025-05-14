@@ -1,0 +1,11 @@
+.team {
+    background: url(../img/global/alt-background.webp) center center / 200px repeat, var(--alt-background-color);
+}
+
+.team__attorney-name {
+    color: var(--card-title-color);
+}
+
+.team__attorney-position {
+    color: var(--brand-color);
+}

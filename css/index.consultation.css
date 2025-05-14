@@ -1,0 +1,27 @@
+.consultation {
+  text-align: center;
+}
+
+.consultation__title {
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif;
+  color: #c39167;
+}
+
+.consultation__subtitle {
+  font-size: 44px;
+  font-family: "Crimson Pro", serif;
+  color: #3e4355;
+}
+
+.consultation__description {
+  font-size: 19px;
+  font-family: "Open Sans", sans-serif;
+  color: #545454;
+}
+
+.consultation__phone-number {
+  font-size: 30px;
+  font-family: "Open Sans", sans-serif;
+  color: #3e4355;
+}
