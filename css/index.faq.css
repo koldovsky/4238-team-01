@@ -1,24 +1,40 @@
 .faq {
-    background: url(../img/global/alt-background.webp) center center / 200px repeat;
-}
+  background: url(../img/global/alt-background.webp) center center / 200px repeat;
 
-.faq__overline {
+  .faq__overline {
     color: var(--brand-color);
-}
+    font-weight: 700;
+    font-size: 12px;
+    text-align: left;
+    text-transform: uppercase;
+  }
 
-.faq__title {
+  .faq__title {
     color: var(--title-color);
     font-family: var(--title-font);
-}
+    font-weight: 600;
+    font-size: 38px;
+    text-align: left;
+  }
 
-.faq__description {
+  .faq__description {
     color: var(--subtitle-color);
-}
+    font-weight: 600;
+    font-size: 19px;
+    text-align: left;
+  }
 
-.faq__accordion-question {
+  .faq__accordion-question {
     color: var(--card-title-color);
-}
+    font-weight: 700;
+    font-size: 18px;
+    text-align: left;
+  }
 
-.faq__accordion-answer {
+  .faq__accordion-answer {
     color: var(--text-color);
+    font-weight: 400;
+    font-size: 17px;
+    text-align: left;
+  }
 }

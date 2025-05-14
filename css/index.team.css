@@ -1,24 +1,41 @@
 .section-team {
-    background: url(../img/global/alt-background.webp) center center / 200px repeat, var(--alt-background-color);
-}
+  background: url(../img/global/alt-background.webp) center center / 200px repeat, var(--alt-background-color);
 
-.section-team__overline {
+  .section-team__overline {
     color: var(--brand-color);
-}
+    font-weight: 700;
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
+  }
 
-.section-team__title {
+  .section-team__title {
     color: var(--title-color);
     font-family: var(--title-font);
-}
+    font-weight: 600;
+    font-size: 38px;
+    text-align: center;
+  }
 
-.section-team__description {
+  .section-team__description {
     color: var(--subtitle-color);
-}
+    font-weight: 600;
+    font-size: 19px;
+    text-align: center;
+  }
 
-.section-team__attorney-name {
+  .section-team__attorney-name {
     color: var(--card-title-color);
-}
+    font-weight: 700;
+    font-size: 22px;
+    text-align: center;
+  }
 
-.section-team__attorney-position {
+  .section-team__attorney-position {
     color: var(--text-color);
+    font-weight: 600;
+    font-size: 14px;
+    font-style: italic;
+    text-align: center;
+  }
 }
