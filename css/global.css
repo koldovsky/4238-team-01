@@ -30,7 +30,7 @@ img {
   --background-footer: #3e4355;
   --footer-back-ico-color: #c39167;
   --footer-ico-color: #ffffff;
-
+  --card-border-light: #f5f5f5;
   --button-text-color: #ffffff;
   --button-alt-text-color: var(--brand-color);
 }
