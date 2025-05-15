@@ -1,133 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Law Firm Website Template Demo</title>
-    <link
-      rel="shortcut icon"
-      href="https://placekitten.com/96/139"
-      type="image/x-icon"
-    />
-    <script
-      src="https://unpkg.com/htmx.org@1.9.10"
-      integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <!-- Sviatoslav Levko #1 -->
-    <header>
-      <nav
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="global.header-nav.partial.html"
-      ></nav>
-      <div
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.header-hero.partial.html"
-      ></div>
-    </header>
 
-    <main>
-      <!-- Kostantin Paholok #2 -->
-      <section
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.helping-clients.partial.html"
-      ></section>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Law Firm Website Template Demo</title>
+  <link rel="shortcut icon" href="https://placekitten.com/96/139" type="image/x-icon" />
+  <script src="https://unpkg.com/htmx.org@1.9.10"
+    integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+    crossorigin="anonymous"></script>
+</head>
 
-      <!-- Anastasiia Dubachynska #3 -->
-      <section
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.cases.partial.html"
-      ></section>
+<body>
+  <!-- Sviatoslav Levko #1 -->
+  <header>
+    <nav data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="global.header-nav.partial.html"></nav>
+    <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.header-hero.partial.html"></div>
+  </header>
 
-      <!-- Mahlovanyi Mykhailo #4 -->
-      <section
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.facts-in-numbers.partial.html"
-      ></section>
+  <main>
+    <!-- Kostantin Paholok #2 -->
+    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.helping-clients.partial.html"></section>
 
-      <!-- Olena Moroz #5 -->
-      <section
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.consultation.partial.html"
-      ></section>
+    <!-- Anastasiia Dubachynska #3 -->
+    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.cases.partial.html"></section>
 
-      <!-- Olena Moroz #6 -->
-      <section
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.why-choose-us.partial.html"
-      ></section>
+    <!-- Mahlovanyi Mykhailo #4 -->
+    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.facts-in-numbers.partial.html">
+    </section>
 
-      <!-- Dmytro Gerasymenko #7 -->
-      <section
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.section-attorneys.partial.html"
-      ></section>
+    <!-- Olena Moroz #5 -->
+    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.consultation.partial.html"></section>
 
-      <!-- Mahlovanyi Mykhailo #8 -->
-      <section
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.contact-form.partial.html"
-      ></section>
+    <!-- Olena Moroz #6 -->
+    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.why-choose-us.partial.html"></section>
 
-      <!-- Dmytro Belevtsev #9 -->
-      <section
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="global.section-carousel.partial.html"
-      ></section>
+    <!-- Dmytro Gerasymenko #7 -->
+    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.section-attorneys.partial.html">
+    </section>
 
-      <!-- Dmytro Gerasymenko #11 -->
-      <section
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.section-faq.partial.html"
-      ></section>
+    <!-- Mahlovanyi Mykhailo #8 -->
+    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.contact-form.partial.html"></section>
 
-      <!-- Olena Moroz #12 -->
-      <section
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.news.partial.html"
-      ></section>
+    <!-- Dmytro Belevtsev #9 -->
+    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="global.section-carousel.partial.html">
+    </section>
 
-      <!-- Vasylyna Kuliaba -->
-      <section
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="services.practice-areas.partial.html"
-      ></section>
+    <!--Ivanna Chuba #10-->
+    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.testimonials.partial.html"></section>
 
-      <!-- Anastasiia Dubachynska #14 -->
-      <section
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.contact-us.partial.html"
-      ></section>
-    </main>
+    <!-- Dmytro Gerasymenko #11 -->
+    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.section-faq.partial.html"></section>
 
+    <!-- Olena Moroz #12 -->
+    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.news.partial.html"></section>
+
+    <!-- Vasylyna Kuliaba -->
+    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="services.practice-areas.partial.html">
+    </section>
+
+    <!-- Anastasiia Dubachynska #14 -->
+    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.contact-us.partial.html"></section>
+  </main>
     <!-- Maksym Khrapa #15 -->
     <footer>
-      <section
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="global.footer-contacts.partial.html"
-      ></section>
-      <section
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="global.footer-nav.partial.html"
-      ></section>
+      <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="global.footer-contacts.partial.html">
+      </section>
+      <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="global.footer-nav.partial.html"></section>
     </footer>
-  </body>
+</body>
+
 </html>
