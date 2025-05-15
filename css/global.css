@@ -16,6 +16,7 @@ img {
 :root {
   scroll-behavior: smooth;
   --title-font: "Crimson Pro", serif;
+  --bg-color: #3e4355;
   font-family: "Open Sans", sans-serif;
   --brand-color: #c39167;
   --title-color: #3e4355;
