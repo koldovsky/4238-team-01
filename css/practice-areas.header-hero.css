@@ -1,0 +1,24 @@
+.header-hero {
+  background-color: var(--brand-color); /* теплий коричневий фон */
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* 
+.header-hero--practice-areas {
+  
+} 
+*/
+
+.header-hero__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  
+}
+
+.header-hero__title {
+  font-family: var(--title-font);
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--title-alt-color); /* білий текст */
+}
