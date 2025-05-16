@@ -58,12 +58,12 @@
           border-radius: 6px;
           font-size: 16px;
           border: 2px solid var(--brand-color);
-
+        }
           .vacancies__button--primary {
             font-family: var(--font-family);
-            background-color: var(--brand-color);
             color: var(--title-alt-color);
-            border: 4px;
+            background-color: var(--brand-color);
+            border: none;
             text-decoration: none;
           }
           .vacancies__button--secondary {
@@ -72,7 +72,6 @@
             color: var(--brand-color);
             text-decoration: none;
           }
-        }
       }
     }
     .vacancies__image-wrapper {
