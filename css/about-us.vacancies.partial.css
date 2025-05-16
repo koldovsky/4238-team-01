@@ -4,7 +4,7 @@
   .vacancies__content {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     gap: 4rem;
     flex-wrap: wrap;
 
@@ -55,23 +55,33 @@
         .vacancies__button {
           padding: 14px 28px;
           font-weight: 600;
-          border-radius: 6px;
           font-size: 16px;
+          cursor: pointer;
           border: 2px solid var(--brand-color);
+          transition: background-color 0.3s, color 0.3s, border 0.3s;
         }
-          .vacancies__button--primary {
-            font-family: var(--font-family);
-            color: var(--title-alt-color);
-            background-color: var(--brand-color);
-            border: none;
-            text-decoration: none;
-          }
-          .vacancies__button--secondary {
-            background-color: transparent;
-            border: 2px solid var(--brand-color);
-            color: var(--brand-color);
-            text-decoration: none;
-          }
+        .vacancies__button--primary {
+          font-family: var(--font-family);
+          color: var(--title-alt-color);
+          background-color: var(--brand-color);
+          border: none;
+          text-decoration: none;
+        }
+        .vacancies__button--primary:hover {
+          background-color: var(--bg-color);
+          color: var(--title-alt-color);
+        }
+
+        .vacancies__button--secondary {
+          background-color: transparent;
+          border: 2px solid var(--brand-color);
+          color: var(--brand-color);
+          text-decoration: none;
+        }
+        .vacancies__button--secondary:hover {
+          background-color: var(--brand-color);
+          color: var(--title-alt-color);
+        }
       }
     }
     .vacancies__image-wrapper {
@@ -86,4 +96,3 @@
     }
   }
 }
-
