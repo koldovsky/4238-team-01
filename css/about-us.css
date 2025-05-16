@@ -1,4 +1,6 @@
 @import "global.css";
+@import "global.header-nav.css"; /* Levko Sviatoslvav #1 */
+@import "subheader.css"; /* Levko Sviatoslvav #1 */
 
 @import "about-us.experience.partial.css"; /* Oleksandr Kozynets 17 */
 @import "about-us.history.partial.css"; /* Dmytro Belevtsev #9*/
