@@ -3,6 +3,14 @@
   padding: 90px 0;
   -webkit-font-smoothing: antialiased;
 
+  @media (min-width: 768px) {
+    padding: 103px 0 105px;
+  }
+
+  @media (min-width: 992px) {
+    padding: 115px 0 120px;
+  }
+
   .section-team__container {
     padding: 0 24px;
 
@@ -119,9 +127,7 @@
       margin-top: 50px;
 
       .section-team__button {
-        color: var(
-          --button-alt-text-color
-        ); /* temporary color. will be changed to '--button-text-color' */
+        color: var(--button-alt-text-color); /* temporary color. will be changed to '--button-text-color' */
         text-decoration: none;
         font-weight: 700;
         font-size: 15.4px;
