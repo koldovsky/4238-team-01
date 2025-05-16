@@ -33,10 +33,6 @@
       grid-template-columns: repeat(3, 1fr);
     }
 
-    @media (min-width: 1280px) {
-      padding: 120px 15px;
-    }
-
     .team__attorney {
       width: 100%;
 
