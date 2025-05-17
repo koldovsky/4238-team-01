@@ -9,20 +9,22 @@
       href="img/global/favicon-c.png"
       type="image/x-icon"
     />
+    <!-- bootstrap Levko Sviatoslav -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"> -->
     <script
       src="https://unpkg.com/htmx.org@1.9.10"
       integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
       crossorigin="anonymous"
     ></script>
     <!-- Olena Moroz #5 -->
-    <link rel="stylesheet" href="css/index.consultation.css">
-    
+    <link rel="stylesheet" href="css/index.consultation.css" />
+
     <!-- Anastasiia Dubachynska -->
-    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
     <!-- Sviatoslav Levko #1 -->
-    <header>
+    <header class="header-section"> 
       <nav
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
@@ -69,7 +71,7 @@
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
         data-hx-get="index.why-choose-us.partial.html"
-      ></section>пше 
+      ></section>
 
       <!-- Dmytro Gerasymenko #7 -->
       <section
@@ -92,11 +94,18 @@
         data-hx-get="global.brand-carousel.partial.html"
       ></section>
 
+      <!--Ivanna Chuba #10-->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.testimonials.partial.html"
+      ></section>
+
       <!-- Dmytro Gerasymenko #11 -->
       <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
-        data-hx-get="index.faq.partial.html"
+        data-hx-get="index.section-faq.partial.html"
       ></section>
 
       <!-- Olena Moroz #12 -->
@@ -104,6 +113,13 @@
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
         data-hx-get="index.news.partial.html"
+      ></section>
+
+      <!--Anastasiia Rusanova #13-->>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.section-we-fight.partial.html"
       ></section>
 
       <!-- Anastasiia Dubachynska #14 -->
@@ -127,5 +143,7 @@
         data-hx-get="global.footer-nav.partial.html"
       ></section>
     </footer>
+    <!-- boostrab Levko Sviatoslav -->
+     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"> -->
   </body>
 </html>

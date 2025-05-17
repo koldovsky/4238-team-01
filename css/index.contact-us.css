@@ -1,5 +1,5 @@
 .contact {
-    background: url(../img/index/contact-form.png) 0% 21.64% / cover no-repeat, rgb(245, 245, 245);
+    background: url(../img/index/contact-form.png) 0% 21.64% / cover no-repeat, var(--background-color);
     height: 90vh;
     display: flex;
     flex-direction: row;
@@ -10,7 +10,7 @@
 
 
     .container {
-        background: white;
+        background: var(--background-color);
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
@@ -29,7 +29,7 @@
         font-size: 50px;
         font-weight: bold;
         text-align: center;
-        color: #3e4355;
+        color: var(--title-color);
         font-family: var(--title-font);
         margin-bottom: 41px;
         margin-top: 41px;
@@ -37,12 +37,12 @@
 
     .contact__description {
         font-size: 19px;
-        color: #545454;
+        color: var(--subtitle-color);
         text-align: center;
     }
 
     .contact__pretitle {
-        color: #c39167;
+        color: var(--brand-color);
         font-size: 15px;
         text-transform: uppercase;
         font-weight: 700;
@@ -59,16 +59,16 @@
             font-size: 15px;
             line-height: 1, 3333px;
             box-sizing: border-box;
-            background-color: #f5f5f5;
+            background-color: var(--background-color);
             border-color: transparent;
         }
 
         button {
             font-size: 14px;
             font-weight: bold;
-            color: #FFFFFF;
+            color: var(--background-color);
             cursor: pointer;
-            background-color: #c39167;
+            background-color: var(--brand-color);
             transition: inherit;
             border-color: transparent;
             border-width: 2px;
@@ -81,7 +81,7 @@
         }
 
         button:hover {
-            background: #3e4355;
+            background: var(--title-color);
         }
     }
 }
@@ -91,6 +91,7 @@
         height: 100%;
         padding: 0 24px;
         display: inline-block;
+        max-width: 100%;
 
         .container {
             max-width: 100%;

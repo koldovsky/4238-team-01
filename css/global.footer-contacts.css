@@ -1,34 +1,11 @@
-/*.footer-contacts {
-  background-color: #3e4355;
-  padding-top: 90px;
-  padding-left: 24px;
-  padding-bottom: 10px;
-  padding-right: 24px;
-}
-.footer-contacts__list {
-
-}
-
-.footer-contacts__title {
-  font-family: "Open Sans", sans-serif;
-  font-size: 12px;
-  color: #c39167;
-  text-transform: uppercase;
-}
-
-.footer-contacts__intro-title {
-  font-family: "Carimson Pro", serif;
-  font-size: 38px;
-  color: #ffffff;
-}*/
 .footer-contacts {
-  background-color: #3a3e4a;
-  color: #d7d7d7;
+  background-color: var(--background-footer);
+  color: var( --text-alt-color);
   padding-top: 90px;
   padding-left: 24px;
   padding-bottom: 10px;
   padding-right: 24px;
-  font-family: "Open Sans", sans-serif;
+    line-height: 1.5;
 }
 
 .footer-contacts__list {
@@ -41,31 +18,31 @@
 }
 
 .footer-contacts__intro {
-  flex: 1 1 1 1 100%;
-  max-width: 205px;
+  max-width: 350px;
 }
 
 .footer-contacts__title {
   text-transform: uppercase;
-  color: #d19465;
+  color: var(--brand-color);
   font-size: 12px;
   letter-spacing: 1px;
-  margin-bottom: 0.5rem;
+  margin-bottom: 2rem;
 }
 
 .footer-contacts__intro-title {
   font-family: "Crimson Pro", serif;
   font-size: 38px;
   font-weight: 600;
-  color: #ffffff;
-  margin: 0 0 1rem;
+  color: var(--title-alt-color);
+  margin: 2rem 0 2rem;
 }
 
 .footer-contacts__intro-text {
   font-size: 19px;
   line-height: 1.5;
-  color: #c4c4c4;
-  font-weight: 500;
+  color: var(--text-alt-color);
+  font-weight: 600;
+  padding-right: 10px;
 }
 
 .footer-contacts__item {
@@ -73,12 +50,13 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 0.5rem;
+  gap: 1.5rem;
+  margin-top: 2rem;
 }
 
 .footer-contacts__item-ico {
-  background-color: #d19465;
-  color: #ffffff;
+  background-color: var(--footer-back-ico-color);
+  color: var(--footer-ico-color);
   border-radius: 50%;
   width: 48px;
   height: 48px;
@@ -88,34 +66,37 @@
 }
 
 .footer-contacts__item-title {
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: #ffffff;
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--title-alt-color);
   margin: 0;
 }
 
 .footer-contacts__item-text {
-  font-size: 1rem;
+  font-style: normal;
+  font-size: 16px;
   line-height: 1.5;
-  color: #c4c4c4;
+  color: var(--text-alt-color);
 }
 
 .footer-contacts__link {
   display: block;
-  color: #c4c4c4;
+  color: var(--text-alt-color);
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .footer-contacts__link:hover {
-  color: #ffffff;
+  color: var(--title-alt-color);
 }
 
 .footer-contacts__divider {
+  display: flex;
+  justify-content: center;
   margin-top: 4rem;
+  max-width: 1200px;
 }
 
 .footer-contacts__divider svg path {
   stroke: rgba(255, 255, 255, 0.2);
 }
-

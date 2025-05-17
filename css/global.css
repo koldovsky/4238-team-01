@@ -16,6 +16,7 @@ img {
 :root {
   scroll-behavior: smooth;
   --title-font: "Crimson Pro", serif;
+  --bg-color: #3e4355;
   font-family: "Open Sans", sans-serif;
   --brand-color: #c39167;
   --title-color: #3e4355;
@@ -26,4 +27,17 @@ img {
   --text-color: #6c6c6d;
   --text-alt-color: #bcbcbc;
   --background-color: #ffffff;
+  --alt-background-color: #f5f5f5;
+  --background-footer: #3e4355;
+  --footer-back-ico-color: #c39167;
+  --footer-ico-color: #ffffff;
+  --card-border-light: #f5f5f5;
+  --button-text-color: #ffffff;
+  --button-alt-text-color: var(--brand-color);
+  --contact-title-color: #5E6A95;
+}
+
+.section-container {
+  max-width: 1200px;
+  margin: auto;
 }
