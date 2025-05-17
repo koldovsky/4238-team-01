@@ -4,12 +4,14 @@
   text-align: center;
   
  .subheader__title {
-    max-width: 1200px;
-    margin: 0 auto;
     font-family: var(--title-font);
-    font-size: 36px;
+    font-size: 38px;
     font-weight: 700;
     color: var(--title-alt-color); /* білий текст */
+
+    @media (min-width: 768px) {
+      font-size: 50px;
+    }
   }
 
 }
