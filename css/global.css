@@ -63,3 +63,7 @@ img {
   --button-background-hover-color: var(--bg-color);
 }
 
+.section-container {
+  max-width: 1200px;
+  margin: auto;
+}
