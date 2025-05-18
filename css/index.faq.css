@@ -18,6 +18,7 @@
     font-weight: 600;
     font-size: 38px;
     text-align: left;
+    padding-top: 20px;
   }
 
   .faq__description {
@@ -25,19 +26,24 @@
     font-weight: 600;
     font-size: 19px;
     text-align: left;
+    padding-top: 25px;
   }
 
-  .faq__accordion-question {
-    color: var(--card-title-color);
-    font-weight: 700;
-    font-size: 18px;
-    text-align: left;
-  }
+  .faq__accordion {
+    padding-top: 25px;
 
-  .faq__accordion-answer {
-    color: var(--text-color);
-    font-weight: 400;
-    font-size: 17px;
-    text-align: left;
+    .faq__accordion-question {
+      color: var(--card-title-color);
+      font-weight: 700;
+      font-size: 18px;
+      text-align: left;
+    }
+
+    .faq__accordion-answer {
+      color: var(--text-color);
+      font-weight: 400;
+      font-size: 17px;
+      text-align: left;
+    }
   }
 }
