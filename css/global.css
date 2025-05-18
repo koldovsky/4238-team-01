@@ -29,4 +29,5 @@ img {
   --alt-background-color: #f5f5f5;
   --button-text-color: #ffffff;
   --button-alt-text-color: var(--brand-color);
+  --brand-card-color: #474b5e;
 }
