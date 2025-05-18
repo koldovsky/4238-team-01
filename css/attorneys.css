@@ -1,4 +1,6 @@
 @import "global.css";
+@import "global.header-nav.css"; /* Levko Sviatoslvav #1 */
+@import "subheader.css"; /* Levko Sviatoslvav #1 */
 
 @import "attorneys.team.css";         /* Dmytro Gerasymenko #20 */
 

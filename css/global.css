@@ -18,6 +18,7 @@ img {
 
   /* Typography */
   --title-font: "Crimson Pro", serif;
+  --bg-color: #3e4355;
   font-family: "Open Sans", sans-serif;
   
   /* Text Colors */
@@ -46,28 +47,19 @@ img {
   --card-title-color: #575c71;
   --brand-card-color: #474b5e;
 
-  
   /* Footer */
   --footer-back-ico-color: #c39167;
   --footer-ico-color: #ffffff;
-    
+  --card-border-light: #f5f5f5;    
   /* Buttons */
   --button-text-color: #ffffff; /*button-text-color-light*/
-  --button-text-color-dark: #080807;
   --button-alt-text-color: var(--brand-color);
   --btn-bg-dark-color: #080807;
   --btn-bg-light-color: #fff;
   --btn-alt-bg-color: #c39167;
 
-  /*пропоную інші назви вище, ці назви видалити*/
+  /*change names of colors*/
   --button-background-color: var(--brand-color);
   --button-background-hover-color: var(--bg-color);
-
 }
 
-/*
-.section-container {
-  max-width: 1200px;
-  margin: auto;
-}
-*/

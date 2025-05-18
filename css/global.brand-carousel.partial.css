@@ -1,0 +1,71 @@
+.brand-carousel {
+  padding:  15px;
+  background-color: var(--title-color); /* #3f4355; */
+}
+
+.brand-carousel__container {
+  display: flex;
+  justify-content: center;
+  /* min-width: 320px; */
+  background-color: var(--title-color);
+}
+
+.brand-carousel__track {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  overflow-y: hidden;
+  overflow-x: hidden;
+
+  height: 140px;
+  /* min-width: 120; */
+
+  padding: 10px;
+  gap: 10px;
+}
+
+.brand-carousel__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 160px;
+  height: 120px;
+
+  border-radius: 6px;
+  background-color: var(--brand-card-color);
+}
+
+.brand-carousel__item img {
+  display: block;
+  max-width: 100%;
+  max-height: 80px;
+  height: auto;
+}
+
+.brand-carousel__button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  z-index: 1;
+}
+
+.brand-carousel__button svg {
+  fill: var(--brand-color); /* #987962; */
+  width: 30px;
+  height: 30px;
+}
+
+.brand-carousel__button--left svg {
+  transform: rotate(180deg);
+}
+
+.brand-carousel__button--right svg {
+  transform: rotate(0deg);
+}
+
+/* @media (min-width: 600px) {
+  
+} */
