@@ -1,7 +1,10 @@
 @import "global.css";
+@import "global.header-nav.css"; /* Levko Sviatoslvav #1 */
+@import "subheader.css"; /* Levko Sviatoslvav #1 */
 
 @import "about-us.experience.partial.css"; /* Oleksandr Kozynets 17 */
 @import "about-us.history.partial.css"; /* Dmytro Belevtsev #9*/
 @import "global.brand-carousel.partial.css"; /* Dmytro Belevtsev #9*/
+@import "about-us.vacancies.partial.css"; /* Kostantin Paholok #19*/
 @import "global.footer-contacts.css"; /* Maksym Khrapa #15 */
 @import "global.footer-nav.css";      /* Maksym Khrapa #15 */

@@ -1,0 +1,92 @@
+.practice-container {
+  margin: 0 auto;
+  padding: 0 24px;
+
+  @media (min-width: 768px) {
+    padding: 0 40px;
+  }
+}
+
+.practice-areas {
+    background-color: var(--background-color);
+      padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.practice-areas__list {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  max-width: 1288px;
+  margin: 0 auto;
+  list-style: none;
+
+}
+
+.practice-areas__item {
+  border: 2px solid #f5f5f5;
+
+  @media (min-width: 768px) {
+    display: flex;
+  }
+}
+.practice-areas__item--reversed {
+  flex-direction: row-reverse;
+}
+
+.practice-areas__image {
+  object-fit: cover;
+
+   @media (min-width: 768px) {
+    width: 50%;
+    
+  }
+}
+
+.practice-areas__content {
+  
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 39px 43px;
+
+  @media (min-width: 768px) {
+    padding: 60px 70px;
+    width: 50%;
+    
+  }
+}
+
+.practice-areas__heading {
+  font-family: "Open Sans";
+  font-size: 24px;
+  color:  rgb(87, 92, 113);
+  font-weight: 700;
+}
+
+.practice-areas__heading-underline {
+  width: 40px;
+  height: 3px;
+  background-color: var(--brand-color);
+  margin-top: 4px;
+  margin-bottom: 8px;
+}
+
+.practice-areas__text {
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+.practice-areas__list-items {
+  list-style: disc inside;
+  color: var(--text-color);
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.practice-areas__list-items li::marker {
+  color: var(--brand-color);
+}
+
+

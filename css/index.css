@@ -1,8 +1,16 @@
 @import "global.css";
+@import "global.header-nav.css"; /*Levko Sviatoslvav #1 */
+@import "index.header-hero.css"; /*Levko Sviatoslvav #1 */
+@import "header-section.css"; /*Levko Sviatoslvav #1 */
 
+@import "index.helping-clients.css";   /* Kostantin Paholok #2 */
 @import "index.cases.css";            /* Anastasiia Dubachynska #3 */
+
+@import "index.consultation.css";     /* Olena Moroz #5 */
+@import "index.why-choose-us.css";    /* Olena Moroz #6 */
 @import "index.team.css";             /* Dmytro Gerasymenko #7 */
 @import "index.faq.css";              /* Dmytro Gerasymenko #11 */
+@import "index.news.css";             /* Olena Moroz #12 */
 @import "index.contact-us.css";       /* Anastasiia Dubachynska #14 */
 @import "global.brand-carousel.partial.css"; /* Belevtsev Dmytro #18 */
 @import "global.footer-contacts.css"; /* Maksym Khrapa #15 */
