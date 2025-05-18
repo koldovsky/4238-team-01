@@ -46,6 +46,7 @@
       font-weight: 600;
       font-size: 38px;
       text-align: center;
+      padding-top: 20px;
 
       @media (min-width: 768px) {
         font-size: 44px;
@@ -61,6 +62,7 @@
       font-weight: 600;
       font-size: 19px;
       text-align: center;
+      padding-top: 20px;
     }
 
     .section-team__attorneys {
@@ -129,17 +131,30 @@
 
     .section-team__action {
       margin-top: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      @media (min-width: 992px) {
+        margin-top: 55px;
+      }
 
       .section-team__button {
-        color: var(--button-alt-text-color); /* temporary color. will be changed to '--button-text-color' */
+        padding: 18px 30px;
+        background-color: var(--brand-color);
+        border-width: 2px;
+        border-color: var(--brand-color);
+        color: var(--button-text-color); /* temporary color. will be changed to '--button-text-color' */
         text-decoration: none;
         font-weight: 700;
         font-size: 15.4px;
         text-align: center;
         letter-spacing: 0.462px;
+        cursor: pointer;
 
         &:hover {
-          color: var(--button-alt-text-color);
+          background-color: var(--button-background-hover-color);
+          border-color: var(--button-background-hover-color);
         }
       }
     }
