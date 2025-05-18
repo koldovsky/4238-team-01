@@ -18,10 +18,12 @@ img {
 
   /* Typography */
   --title-font: "Crimson Pro", serif;
-  font-family: "Open Sans", sans-serif;
   
   /* Text Colors */
   --title-color: #3e4355;
+  --bg-color: #3e4355;
+  --font-family: "Open Sans", sans-serif;
+  --brand-color: #c39167;
   --title-alt-color: #ffffff;
   --title-section-color-light: #fff;
   --subtitle-color: #545454;
