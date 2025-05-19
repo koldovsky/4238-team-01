@@ -5,6 +5,7 @@
   .faq__container {
     display: grid;
     justify-content: center;
+    justify-items: end;
 
     @media (min-width: 768px) {
       grid-template-columns: repeat(2, 1fr);
