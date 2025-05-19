@@ -5,18 +5,19 @@
   .faq__container {
     display: grid;
     justify-content: center;
-    justify-items: end;
+    justify-items: center;
 
     @media (min-width: 768px) {
       grid-template-columns: repeat(2, 1fr);
+      justify-items: end;
     }
 
     .faq__content {
       padding: 90px 30px;
-      max-width: 600px;
 
       @media (min-width: 768px) {
         padding: 102.5px 30px 105px;
+        max-width: 600px;
       }
 
       @media (min-width: 992px) {
