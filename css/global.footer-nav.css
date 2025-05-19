@@ -1,9 +1,11 @@
 .footer-nav {
   background-color: var(--background-footer);
   color: var(--subtitle-alt-color);
-  display: flex;
-  flex-wrap: wrap;
   padding: 30px 24px 40px;
+}
+.footer-nav__container {
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-nav__column {
@@ -38,16 +40,12 @@
   gap: 1rem;
   list-style: none;
   padding: 0;
-  margin: 0.5rem 0 0;
+  margin: 0.625rem auto;
 }
 
 .footer-nav__social-ico {
   display: block;
   fill: var(--footer-back-ico-color);
-}
-
-.footer-nav__social-list {
-  margin: 10px auto;
 }
 
 .footer-nav__nav-title {
@@ -125,23 +123,22 @@
   margin: 12px 0 0;
   width: 100%;
   background-color: rgba(87, 92, 113, 0.3);
-  color: #fff;
+  color: var(--title-alt-color);
   border: none;
   font-size: 14px;
 }
 
 .footer-nav__newsletter-input::placeholder {
-  color: #ccc;
+  color: var(--text-color);
   text-align: center;
   font-size: 14px;
 }
 
 .footer-nav__newsletter-button {
   padding: 0.75rem;
-  background-color: var(--footer-back-ico-color);
+  background-color: var(--btn-alt-bg-color);
   color: var(--title-alt-color);
   border: none;
-  font-family: "Open Sans", sans-serif;
   font-weight: bold;
   cursor: pointer;
   font-size: 14px;
@@ -155,27 +152,75 @@
 }
 
 .footer-nav__divider {
-  display: flex;
-  justify-content: center;
-  margin-top: 1rem;
-  max-width: 1200px;
+  display: block;
+  margin-top: 1rem auto;
 }
 
 .footer-nav__divider svg path {
-  stroke: rgba(255, 255, 255, 0.2);
+  stroke: var(--footer-stroke-color);
 }
 
-.footer-nav__bottom-copyright {
+.footer-nav__bottom {
   display: flex;
+  flex-direction: column;
+}
+.footer-nav__bottom-copyright {
   margin-top: 1rem;
   text-align: center;
   font-size: 14px;
   color: var(--title-alt-color);
 }
 .footer-nav__bottom-rights {
-  display: flex;
   margin-top: 1rem;
   text-align: center;
   font-size: 14px;
-  color: #fff;
+  color: var(--title-alt-color);
+}
+
+@media (min-width: 768px) {
+  .footer-nav__container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .footer-nav__column {
+    flex: 1 1 200px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 2rem;
+    max-width: 300px;
+  }
+  .footer-nav__logo {
+    margin: 0;
+  }
+
+  .footer-nav__social-list {
+    margin: 0;
+  }
+
+  .footer-nav__nav {
+    padding: 0 15px;
+  }
+
+  .footer-nav__nav-title {
+    margin-top: 0;
+  }
+
+  .footer-nav__newsletter {
+    max-width: 300px;
+    margin: 0;
+  }
+
+  .footer-nav__newsletter-note {
+    text-align: left;
+  }
+  .footer-nav__newsletter-title {
+    text-align: left;
+  }
+  .footer-nav__bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
