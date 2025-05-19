@@ -64,6 +64,10 @@ img {
   --button-background-hover-color: var(--bg-color);
 }
 
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
 .section-container {
   max-width: 1200px;
   margin: auto;
