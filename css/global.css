@@ -50,7 +50,8 @@ img {
   /* Footer */
   --footer-back-ico-color: #c39167;
   --footer-ico-color: #ffffff;
-  --card-border-light: #f5f5f5;    
+  --card-border-light: #f5f5f5; 
+  --footer-stroke-color:  rgba(255, 255, 255, 0.2); 
   
   /* Buttons */
   --button-text-color: #ffffff; /*button-text-color-light*/
@@ -66,6 +67,11 @@ img {
 
 body {
   font-family: var(--font-family);
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .section-container {

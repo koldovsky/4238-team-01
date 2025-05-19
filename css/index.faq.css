@@ -53,18 +53,36 @@
       .faq__accordion {
         padding-top: 25px;
 
-        .faq__accordion-question {
-          color: var(--card-title-color);
-          font-weight: 700;
-          font-size: 18px;
-          text-align: left;
-        }
+        .faq__accordion-item {
+          padding: 20px 0;
+          border-bottom-style: solid;
+          border-bottom-width: 0.2px;
+          border-bottom-color: var(--bg-color);
 
-        .faq__accordion-answer {
-          color: var(--text-color);
-          font-weight: 400;
-          font-size: 17px;
-          text-align: left;
+          .faq__accordion-button {
+            border-style: none;
+            background-color: transparent;
+            text-align: left;
+            cursor: pointer;
+
+            .faq__accordion-question {
+              color: var(--card-title-color);
+              font-weight: 700;
+              font-size: 18px;
+            }
+
+            .faq__accordion-icon {
+              margin-left: 20px;
+            }
+          }
+
+          .faq__accordion-answer {
+            color: var(--text-color);
+            font-weight: 400;
+            font-size: 17px;
+            text-align: left;
+            margin-top: 25px;
+          }
         }
       }
     }
