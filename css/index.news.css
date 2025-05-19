@@ -28,21 +28,23 @@
   text-align: center;
 }
 
-.news__grid {
-display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 40px 40px;
-  padding: 40px 20px; 
+.news__cards {
+  display: grid;
+  column-gap: 30px;
+  row-gap: 50px;
+  @media (min-width: 480px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 .news__card-date {
-font-family: var(font-family);
-font-size: 14px;
-color: var(--brand-color);
+  font-family: var(font-family);
+  font-size: 14px;
+  color: var(--brand-color);
 }
 
 .news__card-title {
-font-size: 19px;
-font-family: var(font-family);
-font-weight: 500;
-color: var(--card-title-color);
+  font-size: 19px;
+  font-family: var(font-family);
+  font-weight: 500;
+  color: var(--card-title-color);
 }

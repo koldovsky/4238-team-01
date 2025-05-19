@@ -14,7 +14,7 @@
 
 .why-choose-us__subtitle {
   font-family: var(--title-font);
-  font-size: 44px;
+  font-size: 38px;
   color: var(--title-color);
   font-weight: 500;
   text-align: center;
@@ -29,16 +29,17 @@
   text-align: center;
 }
 
-.why-choose-us__grid {
+.why-choose-us__cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 40px 40px;
-  padding: 40px 20px; 
+  column-gap: 30px;
+  row-gap: 50px;
+  @media (min-width: 480px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .why-choose-us__card {
   border: 1px solid #eee;
-  padding: 24px;  
+  padding: 24px;
   text-align: left;
 }
-
