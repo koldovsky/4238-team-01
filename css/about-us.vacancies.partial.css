@@ -7,9 +7,9 @@
     align-items: center;
     gap: 4rem;
     flex-wrap: wrap;
-
+    
     .vacancies__text-block {
-      padding: 4rem 2rem;
+      padding: 5%;
       flex: 1 1 50%;
 
       .vacancies__title {
@@ -86,12 +86,16 @@
     }
     .vacancies__image-wrapper {
       flex: 1 1 45%;
+      height: 750px;
+      display: flex;
+      
+
 
       .vacancies__image {
         width: 100%;
         height: auto;
         display: block;
-        object-fit: fill;
+        object-fit: cover;
       }
     }
   }
