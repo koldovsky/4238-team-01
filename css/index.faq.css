@@ -1,43 +1,99 @@
 .faq {
-  background: url(../img/global/alt-background.webp) center center / 200px repeat;
-  padding: 90px 30px;
+  background-image: url(../img/global/alt-background.webp);
   -webkit-font-smoothing: antialiased;
 
-  .faq__overline {
-    color: var(--brand-color);
-    font-weight: 700;
-    font-size: 12px;
-    text-align: left;
-    text-transform: uppercase;
-    letter-spacing: 1.2px;
-  }
+  .faq__container {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
 
-  .faq__title {
-    color: var(--title-color);
-    font-family: var(--title-font);
-    font-weight: 600;
-    font-size: 38px;
-    text-align: left;
-  }
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: end;
+    }
 
-  .faq__description {
-    color: var(--subtitle-color);
-    font-weight: 600;
-    font-size: 19px;
-    text-align: left;
-  }
+    .faq__content {
+      padding: 90px 30px;
 
-  .faq__accordion-question {
-    color: var(--card-title-color);
-    font-weight: 700;
-    font-size: 18px;
-    text-align: left;
-  }
+      @media (min-width: 768px) {
+        padding: 102.5px 30px 105px;
+        max-width: 600px;
+      }
 
-  .faq__accordion-answer {
-    color: var(--text-color);
-    font-weight: 400;
-    font-size: 17px;
-    text-align: left;
+      @media (min-width: 992px) {
+        padding: 115px 30px 120px;
+      }
+
+      .faq__overline {
+        color: var(--brand-color);
+        font-weight: 700;
+        font-size: 12px;
+        text-align: left;
+        text-transform: uppercase;
+        letter-spacing: 1.2px;
+      }
+
+      .faq__title {
+        color: var(--title-color);
+        font-family: var(--title-font);
+        font-weight: 600;
+        font-size: 38px;
+        text-align: left;
+        padding-top: 20px;
+      }
+
+      .faq__description {
+        color: var(--subtitle-color);
+        font-weight: 600;
+        font-size: 19px;
+        text-align: left;
+        padding-top: 25px;
+      }
+
+      .faq__accordion {
+        padding-top: 25px;
+
+        .faq__accordion-item {
+          padding: 20px 0;
+          border-bottom-style: solid;
+          border-bottom-width: 0.2px;
+          border-bottom-color: var(--bg-color);
+
+          .faq__accordion-button {
+            border-style: none;
+            background-color: transparent;
+            text-align: left;
+            cursor: pointer;
+
+            .faq__accordion-question {
+              color: var(--card-title-color);
+              font-weight: 700;
+              font-size: 18px;
+            }
+
+            .faq__accordion-icon {
+              margin-left: 20px;
+            }
+          }
+
+          .faq__accordion-answer {
+            color: var(--text-color);
+            font-weight: 400;
+            font-size: 17px;
+            text-align: left;
+            margin-top: 25px;
+          }
+        }
+      }
+    }
+
+    .faq__image-wrapper {
+      .faq__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
   }
 }

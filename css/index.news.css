@@ -1,7 +1,7 @@
-.why-choose-us {
+.news {
   padding: 90px 24px;
 }
-.why-choose-us__title {
+.news__title {
   text-transform: uppercase;
   font-size: 12px;
   color: var(--brand-color);
@@ -11,10 +11,9 @@
   margin-bottom: 20px;
   letter-spacing: calc(0.1 * 1em);
 }
-
-.why-choose-us__subtitle {
+.news__subtitle {
   font-family: var(--title-font);
-  font-size: 38px;
+  font-size: 44px;
   color: var(--title-color);
   font-weight: 500;
   text-align: center;
@@ -22,27 +21,33 @@
   margin-bottom: 20px;
 }
 
-.why-choose-us__description {
+.news__description {
   font-size: 19px;
   font-family: var(font-family);
   color: var(--subtitle-color);
   text-align: center;
 }
 
-.why-choose-us__cards {
+.news__cards {
   display: grid;
   column-gap: 30px;
   row-gap: 50px;
   @media (min-width: 480px) {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);  
   }
   @media (min-width: 992px) {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+.news__card-date {
+  font-family: var(font-family);
+  font-size: 14px;
+  color: var(--brand-color);
+}
 
-.why-choose-us__card {
-  border: 1px solid #eee;
-  padding: 24px;
-  text-align: left;
+.news__card-title {
+  font-size: 19px;
+  font-family: var(font-family);
+  font-weight: 500;
+  color: var(--card-title-color);
 }

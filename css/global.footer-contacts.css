@@ -1,20 +1,19 @@
 .footer-contacts {
   background-color: var(--background-footer);
-  color: var( --text-alt-color);
+  color: var(--text-alt-color);
   padding-top: 90px;
   padding-left: 24px;
   padding-bottom: 10px;
   padding-right: 24px;
-    line-height: 1.5;
+  line-height: 1.5;
 }
 
 .footer-contacts__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: flex-start;
   gap: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
 }
 
 .footer-contacts__intro {
@@ -30,11 +29,11 @@
 }
 
 .footer-contacts__intro-title {
-  font-family: "Crimson Pro", serif;
+  font-family: var(--title-font);
   font-size: 38px;
   font-weight: 600;
   color: var(--title-alt-color);
-  margin: 2rem 0 2rem;
+  margin: 2rem 0;
 }
 
 .footer-contacts__intro-text {
@@ -42,7 +41,6 @@
   line-height: 1.5;
   color: var(--text-alt-color);
   font-weight: 600;
-  padding-right: 10px;
 }
 
 .footer-contacts__item {
@@ -91,12 +89,20 @@
 }
 
 .footer-contacts__divider {
-  display: flex;
-  justify-content: center;
-  margin-top: 4rem;
-  max-width: 1200px;
+  margin-top: 4rem auto;
 }
 
 .footer-contacts__divider svg path {
-  stroke: rgba(255, 255, 255, 0.2);
+  stroke: var(--footer-stroke-color);
+}
+
+@media (min-width: 768px) {
+  .footer-contacts__list {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+  .footer-contacts__item--last {
+    max-width: 170px;
+  }
 }
