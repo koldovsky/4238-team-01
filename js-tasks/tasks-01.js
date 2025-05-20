@@ -33,6 +33,9 @@ function litres(time) {
   // alternative solution 2
   // const litres = time * 0.5;
   // return litres - litres % 1;
+
+  // alternative solution 3
+  // return (time / 2) | 0;
 }
 
 // Opposites Attract https://www.codewars.com/kata/555086d53eac039a2a000083/train/javascript
