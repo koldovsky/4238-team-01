@@ -40,8 +40,12 @@
   }
 }
 .practice-areas__item--reversed {
-  flex-direction: row-reverse;
+  flex-direction: column;
+  @media (min-width: 768px) {
+    flex-direction: row-reverse;
+  }
 }
+
 
 .practice-areas__image {
   width: 100%;
