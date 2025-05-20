@@ -1,12 +1,11 @@
 .brand-carousel {
-  padding:  15px;
-  background-color: var(--title-color); /* #3f4355; */
+  padding:  0;
+  /* background-color: var(--title-color);*/ /* #3f4355; */
 }
 
 .brand-carousel__container {
   display: flex;
   justify-content: center;
-  /* min-width: 320px; */
   background-color: var(--title-color);
 }
 
