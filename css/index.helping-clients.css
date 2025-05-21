@@ -29,11 +29,15 @@
       margin-bottom: 1rem;
       text-align: left;
     }
+    
+      @media (min-width: 768px) {
+        font-size: 16px;
+      }
 
     .helping-clients__subtitle {
       font-family: var(--title-font);
       font-size: 38px;
-      font-weight: 600;
+      font-weight: 700;
       text-align: left;
       color: var(--title-color);
       margin-top: 1rem;
@@ -42,7 +46,15 @@
       .helping-clients__highlight {
         color: var(--brand-color);
       }
-       
+    
+      @media (min-width: 768px) {
+        font-size: 44px;
+      }
+      @media (min-width: 1024px) {
+        font-size: 50px;
+      }
+
+
     }
     .helping-clients__description {
       color: var(--subtitle-color);
@@ -51,6 +63,7 @@
       margin-top: 1rem;
       margin-bottom: 1rem;
     }
+  
     .helping-clients__text {
       font-size: 17px;
       font-weight: 400px;
@@ -58,6 +71,7 @@
       text-align: left;
       color: var(--text-color);
     }
+      
     .helping-clients__features {
       list-style: none;
       padding: 0;
@@ -89,6 +103,9 @@
           margin-bottom: 6px;
           color: var(--title-color);
         }
+          @media (min-width: 768px) {
+        font-size: 24px;
+      }
 
         .helping-clients__feature-text {
           font-size: 17px;
@@ -97,5 +114,5 @@
       }
     }
   }
-}
+
 

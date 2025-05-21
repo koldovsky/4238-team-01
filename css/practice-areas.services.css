@@ -1,16 +1,17 @@
 .practice-container {
   margin: 0 auto;
   padding: 0 24px;
+  width: 100%;
 
   @media (min-width: 768px) {
-    padding: 0 40px;
+    padding: 0 32px;
   }
 }
 
 .practice-areas {
     background-color: var(--background-color);
-      padding-top: 120px;
-  padding-bottom: 120px;
+   padding-top: 105px;
+      padding-bottom: 105px;
 }
 
 .practice-areas__list {
@@ -25,21 +26,38 @@
 
 .practice-areas__item {
   border: 2px solid #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   @media (min-width: 768px) {
     display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    text-align: left;
+    height: 100%;
+    min-height: 400%;
   }
 }
 .practice-areas__item--reversed {
-  flex-direction: row-reverse;
+  flex-direction: column;
+  @media (min-width: 768px) {
+    flex-direction: row-reverse;
+  }
 }
 
+
 .practice-areas__image {
+  width: 100%;
+  height: auto;
   object-fit: cover;
+  
 
    @media (min-width: 768px) {
     width: 50%;
-    
+    height: auto;
+    max-height: 100;
+    display: block;
   }
 }
 
@@ -51,9 +69,10 @@
   padding: 39px 43px;
 
   @media (min-width: 768px) {
-    padding: 60px 70px;
     width: 50%;
-    
+    padding: 46px 52px;
+    height: 100%;
+    justify-content: center;
   }
 }
 
@@ -83,6 +102,8 @@
   color: var(--text-color);
   font-size: 17px;
   line-height: 1.6;
+  text-align: left;
+  margin: 0%;
 }
 
 .practice-areas__list-items li::marker {
