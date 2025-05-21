@@ -1,65 +1,61 @@
 .header-hero {
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 200px 40px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    z-index: 1;
-    position: relative;
-    
-    .header-hero__title {
-        font-family: var(--font-family);
-        font-size: 12px;
-        font-weight: bold;
-        /* color: #B08C5D; */
-        color: var(--brand-color);
-        text-transform: uppercase;
-        margin-bottom: 20px;
-      }
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 200px 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 1;
+  position: relative;
 
-      .header-hero__subtitle {
-        font-family: var(--title-font);
-        font-size: 56px;
-        font-weight: bold;
-        color: var(--title-color);
-      }
-
-      .header-hero__description {
-        font-family: var(--font-family);
-        font-size: 19px;
-        color: var(--title-color)
-        }
-
-        .header-hero__buttons {
-        display: flex;
-        gap: 20px;
-
-        }
-        .header-hero__button {
-            padding: 14px 28px;
-            font-weight: 600;
-            /* border-radius: 6px; */
-            transition: all 0.3s ease;
-            font-size: 16px;
-          }
-
-        .header-hero__button--color{
-            font-family: var(--font-family);
-            color: var(--title-alt-color);
-            background-color: var(--brand-color);
-            border: none;
-            text-decoration: none;
-
-        }
-        .header-hero__button--transparent {
-            background-color: transparent;
-            border: 2px solid var(--brand-color);
-            color: var(--brand-color);
-            text-decoration: none;
-          }
-          
-
-
+  .header-hero__title {
+    font-family: var(--font-family);
+    font-size: 12px;
+    font-weight: bold;
+    /* color: #B08C5D; */
+    color: var(--brand-color);
+    text-transform: uppercase;
+    margin-bottom: 20px;
   }
- 
+
+  .header-hero__subtitle {
+    font-family: var(--title-font);
+    font-size: 56px;
+    font-weight: bold;
+    color: var(--title-color);
+  }
+
+  .header-hero__description {
+    font-family: var(--font-family);
+    font-size: 19px;
+    color: var(--title-color)
+  }
+
+  .header-hero__buttons {
+    display: flex;
+    gap: 20px;
+  }
+
+  .header-hero__button {
+    padding: 14px 28px;
+    font-weight: 600;
+    /* border-radius: 6px; */
+    transition: all 0.3s ease;
+    font-size: 16px;
+  }
+
+  .header-hero__button--color {
+    font-family: var(--font-family);
+    color: var(--title-alt-color);
+    background-color: var(--brand-color);
+    border: none;
+    text-decoration: none;
+  }
+
+  .header-hero__button--transparent {
+    background-color: transparent;
+    border: 2px solid var(--brand-color);
+    color: var(--brand-color);
+    text-decoration: none;
+  }
+}
