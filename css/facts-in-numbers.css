@@ -1,8 +1,8 @@
 
 .facts {
   padding: 80px 20px;
-  background-color: #ffffff;
-  color: #1a1a1a;
+  background-color: var(--background-section-light);
+  color: var(--text-color);
 }
 
 .facts__container {
@@ -15,13 +15,13 @@
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 12px;
-  color: #cc3c1d; 
+  color: var(--text-alt-section-color);
   text-transform: uppercase;
 }
 
 .facts__text {
   font-size: 18px;
-  color: #333333;
+  color: var(--text-alt-color);
   margin-bottom: 40px;
   max-width: 600px;
   margin-left: auto;
@@ -45,10 +45,10 @@
 .facts__label {
   font-size: 18px;
   font-weight: 600;
-  color: #1c1c1c;
+  color: var(--text-alt-color);
   transition: color 0.3s ease;
 }
 
 .facts__label:hover {
-  color: #cc3c1d; 
+ color: var(--brand-color);
 }
