@@ -12,6 +12,14 @@ function DNAtoRNA(dna) {
 const minimum = (list) => Math.min(...list);
 const maximum = (list) => Math.max(...list);
 
+// alternative solution
+// function min(arr) {
+//     return arr.reduce((acc, item) => item < acc ? item : acc, arr[0]);
+// }
+// function max(arr) {
+//     return arr.reduce((acc, item) => item > acc ? item : acc, arr[0]);
+// }
+
 // https://www.codewars.com/kata/544a54fd18b8e06d240005c0/train/javascript
 function min(arr, toReturn) {
     return toReturn === "value" ? Math.min(...arr) : arr.indexOf(Math.min(...arr));
