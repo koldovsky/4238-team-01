@@ -12,7 +12,7 @@ function giveMeFive(obj) {
     }
     return arr;
 
-    // alternative solution
+    // alternative solution 1
     // const res = [];
     // for (let key in obj) {
     //     const value = obj[key];
@@ -20,6 +20,13 @@ function giveMeFive(obj) {
     //     if (value.length === 5) res.push(value);
     // }
     // return res;
+
+    // alternative solution 2
+    // const result = [];
+    // for (key in obj) {
+    //     [key, obj[key]].forEach(e => { if (e.length === 5) result.push(e) });
+    // }
+    // return result;
 }
 
 // https://www.codewars.com/kata/understanding-closures-the-basics/train/javascript
