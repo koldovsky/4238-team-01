@@ -41,6 +41,7 @@
 
 .consultation__description-highlight {
  color: var(--brand-color);
+ text-decoration: underline;
 }
 
 .consultation__phone-number {
