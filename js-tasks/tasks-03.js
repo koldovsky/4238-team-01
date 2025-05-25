@@ -52,6 +52,7 @@ class Cat extends Animal {
     constructor(name, age, status) {
         super(name, age, 4, "cat", status);
     }
+
     introduce() {
         return super.introduce() + "  Meow meow!";
     }
@@ -62,6 +63,7 @@ class Dog extends Animal {
         super(name, age, 4, "dog", status);
         this.master = master;
     }
+
     greetMaster() {
         return `Hello ${this.master}`;
     }
