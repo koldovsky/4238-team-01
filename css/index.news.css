@@ -1,5 +1,6 @@
 .news {
   padding: 90px 24px;
+  background-color: var(--background-section-ligh);
 }
 .news__title {
   text-transform: uppercase;
@@ -13,12 +14,21 @@
 }
 .news__subtitle {
   font-family: var(--title-font);
-  font-size: 44px;
+  font-size: 38px;
   color: var(--title-color);
   font-weight: 500;
   text-align: center;
   text-transform: capitalize;
   margin-bottom: 20px;
+  line-height: 40px;
+  margin-bottom: 20px;
+
+ @media (min-width: 768px) {
+    font-size: 44px;
+  }
+  @media (min-width: 1024px) {
+    font-size: 50px;
+  }
 }
 
 .news__description {
@@ -26,6 +36,7 @@
   font-family: var(font-family);
   color: var(--subtitle-color);
   text-align: center;
+  margin-bottom: 48px;
 }
 
 .news__cards {
@@ -33,21 +44,51 @@
   column-gap: 30px;
   row-gap: 50px;
   @media (min-width: 480px) {
-    grid-template-columns: repeat(2, 1fr);  
+    grid-template-columns: repeat(2, 1fr);
   }
   @media (min-width: 992px) {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+.news__card-image {
+  width: 100%;
+  aspect-ratio: 370 / 238;
+}
 .news__card-date {
   font-family: var(font-family);
   font-size: 14px;
+  font-style: italic;
   color: var(--brand-color);
+  margin-top: 10px;
+  margin-bottom: 15px;
 }
 
 .news__card-title {
-  font-size: 19px;
+  font-size: 18px;
   font-family: var(font-family);
-  font-weight: 500;
+  font-weight: 700;
   color: var(--card-title-color);
+  margin-bottom: 20px;
+}
+.news__card-description {
+  font-size: 17px;
+  font-family: var(--font-family);
+  color: var(--text-color);
+  margin-bottom: 48px;
+}
+.news__card-button {
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: var(--font-family);
+  color: var(--brand-color);
+  border: 2px solid var(--brand-color);
+  background-color: transparent;
+  border-radius: 0;
+  text-align: center;
+
+  &:hover {
+    background-color: var(--brand-color);
+    color: white;
+  }
 }

@@ -1,6 +1,8 @@
 .why-choose-us {
   padding: 90px 24px;
+  background-color: var( --background-section-light);
 }
+
 .why-choose-us__title {
   text-transform: uppercase;
   font-size: 12px;
@@ -20,6 +22,13 @@
   text-align: center;
   text-transform: capitalize;
   margin-bottom: 20px;
+
+  @media (min-width: 768px) {
+    font-size: 44px;
+  }
+  @media (min-width: 1024px) {
+    font-size: 50px;
+  }
 }
 
 .why-choose-us__description {
@@ -27,12 +36,16 @@
   font-family: var(font-family);
   color: var(--subtitle-color);
   text-align: center;
+  margin-bottom: 48px;
 }
 
 .why-choose-us__cards {
   display: grid;
+  grid-template-columns: 1fr;
   column-gap: 30px;
   row-gap: 50px;
+  padding: 0;
+
   @media (min-width: 480px) {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -43,6 +56,32 @@
 
 .why-choose-us__card {
   border: 1px solid #eee;
-  padding: 24px;
+  box-sizing: border-box;
+  width: 250;
+  height: 268px;
+  padding: 20px;
   text-align: left;
+  line-height: 40px;
+}
+.why-choose-us__card-icon {
+  margin-bottom: 20px;
+}
+.why-choose-us__card-title {
+  font-family: var(--font-family);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--card-title-color);
+  margin-bottom: 20px;
+}
+.why-choose-us__underline {
+  width: 40px;
+  height: 3px;
+  background-color: var(--brand-color);
+  margin-top: 8px;
+  margin-bottom: 12px;
+}
+.why-choose-us__card-description {
+  font-family: var(--font-family);
+  font-size: 17px;
+  color: var(--text-color);
 }
