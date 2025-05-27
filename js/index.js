@@ -1,5 +1,5 @@
 function init() {
-    import('./index.faq'); // Dmytro Gerasymenko
+    import('./index.faq.js'); // Dmytro Gerasymenko
 }
 
 const totalPartials = document.querySelectorAll('[hx-trigger="load"], [data-hx-trigger="load"]').length;
