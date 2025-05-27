@@ -1,4 +1,5 @@
 function init() {
+    import('./index.cases.js'); // Anastasiia Dubachynska
     import('./index.faq.js'); // Dmytro Gerasymenko
 }
 
