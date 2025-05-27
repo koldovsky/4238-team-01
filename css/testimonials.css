@@ -24,7 +24,7 @@
 .testimonials__description{
   font-size: 19px;
   color: var(--subtitle-color);
-  font: weight 600px;
+  font: weight 600px;gi
 }
 .testimonial-container {
   display: flex;
