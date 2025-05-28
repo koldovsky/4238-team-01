@@ -1,9 +1,9 @@
 .contact-form {
-  background-color:var(--background-section-dark);
+  background-color: var(--background-section-dark);
   padding: 100px 20px;
   position: relative;
   text-align: center;
-  color:var(--btn-bg-light-color);
+  color: var(--btn-bg-light-color);
 }
 
 .contact-form__container {
@@ -20,18 +20,18 @@
 
 .contact-form__text {
   font-size: 18px;
-  color:var(--subtitle-alt-color);
+  color: var(--subtitle-alt-color);
   font-style: italic;
   margin-bottom: 40px;
 }
 
 .contact-form__link {
-  color:var(--text-alt-section-color);
+  color: var(--text-alt-section-color);
   text-decoration: underline;
 }
 
 .contact-form__play-button {
-  background-color:var(--text-alt-section-color);
+  background-color: var(--text-alt-section-color);
   border: none;
   border-radius: 50%;
   width: 80px;
@@ -43,6 +43,6 @@
 }
 
 .contact-form__play-icon {
-  color:var(--btn-bg-light-color);
+  color: var(--btn-bg-light-color);
   font-size: 32px;
 }

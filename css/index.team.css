@@ -143,7 +143,8 @@
         padding: 18px 30px;
         background-color: var(--brand-color);
         border-style: none;
-        color: var(--button-text-color); /* temporary color. will be changed to '--button-text-color' */
+        color: var(--button-text-color);
+        /* temporary color. will be changed to '--button-text-color' */
         text-decoration: none;
         font-weight: 700;
         font-size: 15.4px;

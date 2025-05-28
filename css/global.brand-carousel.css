@@ -1,6 +1,7 @@
 .brand-carousel {
-  padding:  0;
-  /* background-color: var(--title-color);*/ /* #3f4355; */
+  padding: 0;
+  /* background-color: var(--title-color);*/
+  /* #3f4355; */
 }
 
 .brand-carousel__container {
@@ -52,7 +53,8 @@
 }
 
 .brand-carousel__button svg {
-  fill: var(--brand-color); /* #987962; */
+  fill: var(--brand-color);
+  /* #987962; */
   width: 30px;
   height: 30px;
 }

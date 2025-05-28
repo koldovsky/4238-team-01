@@ -102,6 +102,7 @@
     justify-content: space-between;
     flex-wrap: nowrap;
   }
+
   .footer-contacts__item--last {
     max-width: 170px;
   }

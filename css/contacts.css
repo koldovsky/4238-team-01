@@ -1,9 +1,6 @@
 @import "global.css";
 @import "global.header-nav.css"; /* Levko Sviatoslvav #1 */
 @import "subheader.css"; /* Levko Sviatoslvav #1 */
-
-
-@import "contacts.contact-offices.partial.css"; /* Oleksandr Kozynets 21 */
-
+@import "contacts.contact-offices.css"; /* Oleksandr Kozynets 21 */
 @import "global.footer-contacts.css"; /* Maksym Khrapa #15 */
 @import "global.footer-nav.css";      /* Maksym Khrapa #15 */

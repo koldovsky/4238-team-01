@@ -9,9 +9,9 @@
 }
 
 .practice-areas {
-    background-color: var(--background-color);
-   padding-top: 105px;
-      padding-bottom: 105px;
+  background-color: var(--background-color);
+  padding-top: 105px;
+  padding-bottom: 105px;
 }
 
 .practice-areas__list {
@@ -21,11 +21,10 @@
   max-width: 1288px;
   margin: 0 auto;
   list-style: none;
-
 }
 
 .practice-areas__item {
-  border: 2px solid #f5f5f5;
+  border: 2px solid var(--card-border-light);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -39,21 +38,21 @@
     min-height: 400%;
   }
 }
+
 .practice-areas__item--reversed {
   flex-direction: column;
+
   @media (min-width: 768px) {
     flex-direction: row-reverse;
   }
 }
 
-
 .practice-areas__image {
   width: 100%;
   height: auto;
   object-fit: cover;
-  
 
-   @media (min-width: 768px) {
+  @media (min-width: 768px) {
     width: 50%;
     height: auto;
     max-height: 100;
@@ -62,7 +61,6 @@
 }
 
 .practice-areas__content {
-  
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -79,7 +77,7 @@
 .practice-areas__heading {
   font-family: "Open Sans";
   font-size: 24px;
-  color:  rgb(87, 92, 113);
+  color: rgb(87, 92, 113);
   font-weight: 700;
 }
 
@@ -109,5 +107,3 @@
 .practice-areas__list-items li::marker {
   color: var(--brand-color);
 }
-
-

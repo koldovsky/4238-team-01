@@ -1,74 +1,73 @@
 .we-fight {
-    padding: 40px 0 45px;
-    background-color: var(--background-section-dark);
+  padding: 40px 0 45px;
+  background-color: var(--background-section-dark);
 
-    .we-fight__container {
-        display: flex;
-        flex-direction: column;
+  .we-fight__container {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 750px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .we-fight__content {
+      .we-fight__title {
+        color: var(--title-section-color-light);
+        font-weight: bold;
+        font-size: 22px;
+        text-align: left;
+        padding: 0 15px;
+      }
+
+      .we-fight__text {
+        color: var(--text-section-color);
+        font-weight: bold;
+        font-size: 14px;
+        text-align: left;
+        padding: 0 15px;
+
+        .we-fight__star {
+          color: var(--text-alt-section-color);
+        }
+      }
+    }
+
+    .we-fight__button-link {
+      text-align: center;
+      font-size: 14px;
+      flex: 1;
+
+      .we-fight__button {
+        display: inline-block;
+        padding: 18px 28px;
+        text-align: center;
+        color: var(--button-text-color);
+        background-color: var(--btn-alt-bg-color);
+        font-weight: bold;
+        font-size: 16px;
+        text-decoration: none;
+        cursor: pointer;
 
         @media (min-width: 750px) {
-            flex-direction: row;
-            justify-content: space-between;
+          display: inline-block;
+          padding: 18px 28px;
+          text-align: center;
+          color: var(--button-text-color);
+          background-color: var(--btn-alt-bg-color);
+          font-weight: bold;
+          font-size: 16px;
+          text-decoration: none;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          white-space: normal;
         }
 
-        .we-fight__content {
-
-            .we-fight__title {
-                color: var(--title-section-color-light);
-                font-weight: bold;
-                font-size: 22px;
-                text-align: left;
-                padding: 0 15px;
-            }
-
-            .we-fight__text {
-                color: var(--text-section-color);
-                font-weight: bold;
-                font-size: 14px;
-                text-align: left;
-                padding: 0 15px;
-
-                .we-fight__star {
-                    color: var(--text-alt-section-color);
-                }
-            }
+        &:hover {
+          background-color: var(--btn-bg-light-color);
+          color: var(--button-text-color-dark);
         }
-
-        .we-fight__button-link {
-            text-align: center;
-            font-size: 14px;
-            flex: 1;
-
-            .we-fight__button {
-                display: inline-block;
-                padding: 18px 28px;
-                text-align: center;
-                color: var(--button-text-color);
-                background-color: var(--btn-alt-bg-color);
-                font-weight: bold;
-                font-size: 16px;
-                text-decoration: none;
-                cursor: pointer;
-
-                @media (min-width: 750px) {
-                    display: inline-block;
-                    padding: 18px 28px;
-                    text-align: center;
-                    color: var(--button-text-color);
-                    background-color: var(--btn-alt-bg-color);
-                    font-weight: bold;
-                    font-size: 16px;
-                    text-decoration: none;
-                    cursor: pointer;
-                    transition: all 0.3s ease;
-                    white-space: normal;
-                }
-
-                &:hover {
-                    background-color: var(--btn-bg-light-color);
-                    color: var(--button-text-color-dark);
-                }
-            }
-        }
+      }
     }
+  }
 }
