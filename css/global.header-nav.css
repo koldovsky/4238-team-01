@@ -1,18 +1,22 @@
 /* Загальний відступ навігації */
 .navbar {
-  padding: 20px 40px;
+  padding: 16px 24px;
+ 
+  margin: 0 auto;   
+  width: 100%;
+  
 }
 
 /* Контейнер в навбарі */
 .navbar .container-fluid {
   display: flex;
+  max-width: 1200px; 
   justify-content: space-between;
-  align-items: center;
 }
 
 /* Лого */
 .navbar-brand img {
-  width: 235px;
+  width: 200px;
   height: auto;
 }
 
@@ -20,7 +24,7 @@
 .navbar-menu {
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 24px;
   width: 100%;
   margin-bottom: 0;
   padding-left: 0;
@@ -50,8 +54,8 @@
 .nav-link {
   font-family: var(--font-family);
   color: var(--title-color);
-  font-weight: 500;
-  font-size: 16px;
+  font-weight: 400;
+  font-size: 15px;
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -64,7 +68,8 @@
 
 /* Телефон — контейнер */
 .phone-box {
-  margin-left: 40px; /* або змінюй при потребі */
+  margin-left: 0;
+  margin-right: 0; /* або змінюй при потребі */
 }
 
 .mobile-only {
@@ -83,7 +88,7 @@
   font-family: var(--font-family);
   color: var(--title-color);
   font-weight: 600;
-  font-size: 16px;
+  font-size: 14px;
   text-decoration: none;
   white-space: nowrap;
 }
