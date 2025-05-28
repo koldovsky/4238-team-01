@@ -60,10 +60,24 @@
           border-bottom-color: var(--bg-color);
 
           .faq__accordion-button {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
             border-style: none;
             background-color: transparent;
             text-align: left;
             cursor: pointer;
+            transition: all 0.3s ease;
+
+            &.active {
+              .faq__accordion-icon {
+                &::after {
+                  transform: translateX(-50%) rotate(90deg);
+                  opacity: 0;
+                }
+              }
+            }
 
             .faq__accordion-question {
               color: var(--card-title-color);
@@ -73,6 +87,51 @@
 
             .faq__accordion-icon {
               margin-left: 20px;
+              position: relative;
+              width: 15px;
+              height: 15px;
+              transition: transform 0.3s ease;
+              min-width: 15px;
+              min-height: 15px;
+              flex-shrink: 0;
+
+              &::before, &::after {
+                content: '';
+                position: absolute;
+                background-color: var(--card-title-color);
+                transition: all 0.5s ease;
+              }
+
+              &::before {
+                width: 15px;
+                height: 2px;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+              }
+
+              &::after {
+                width: 2px;
+                height: 15px;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+              }
+            }
+          }
+
+          .faq__accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-in;
+
+            &.active {
+              max-height: 500px;
+
+              .faq__accordion-answer {
+                opacity: 1;
+                transform: translateY(0);
+              }
             }
           }
 
@@ -82,6 +141,9 @@
             font-size: 17px;
             text-align: left;
             margin-top: 25px;
+            opacity: 0;
+            transform: translateY(-10px);
+            transition: opacity 0.25s ease 0.05s, transform 0.25s ease 0.05s;
           }
         }
       }
