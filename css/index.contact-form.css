@@ -1,5 +1,8 @@
 .contact-form {
-  background-color: var(--background-section-dark);
+  background-image: linear-gradient(var(--background-section-alt-dark), var(--background-section-alt-dark)), url(../img/index/video-background.png);
+  background-attachment: fixed;
+  background-position: 80%;
+  background-size: cover;
   padding: 100px 20px;
   position: relative;
   text-align: center;
