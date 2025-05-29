@@ -1,6 +1,9 @@
 .facts {
+  background-image: url(../img/index/facts-in-numbers-background.png);
+  background-attachment: fixed;
+  background-position: right;
+  background-size: cover;
   padding: 80px 20px;
-  background-color: var(--background-section-light);
   color: var(--text-color);
 }
 
