@@ -22,9 +22,8 @@ class Slider {
         // attaching events;
         this.back_control.onclick = this.moveBack.bind(this);
         this.forward_control.onclick = this.moveForward.bind(this);
-        window.onresize = this.invalidateStatement.bind(this);
+        window.onresize = this.invalidateSize.bind(this)
     }
-    
     // method to invalidate statemnet;
     invalidateStatement() {
         this.limit = this.getDynamicStatement().limit;
@@ -35,10 +34,17 @@ class Slider {
     // get current actual statements;
     getDynamicStatement() {
         return {
-            limit: (Math.floor(this.slider_wrapper.clientWidth / (this.slide_width + this.margins)) || 1),
+            limit: (Math.floor(this.slider_wrapper.clientWidth / (this.slide_width + (this.margins ))) || 1),
             from: 0,
-            to: Math.floor(this.slider_wrapper.clientWidth / this.slide_width) - 1
+            to: Math.floor(this.slider_wrapper.clientWidth /(this.slide_width )) - 1
         }
+    }
+
+    // invalidate size of Slider;
+    invalidateSize() {
+        this.invalidateStatement();
+        this.render();
+        this.container.style.transform = `translateX(-0px)`
     }
 
     // move slider to 1 slide back;
@@ -97,8 +103,8 @@ class Slider {
 const ROOT_CONTAINER = 'cases__sider__root'
 const CONTAINER_ID = 'casses-slider';
 const CONTROLS_CONTAINER = 'cases__sider__controls';
-const MARGINS = 25;
+const MARGINS = 15;
 
 // Initing our slider & calling render;
-const slider = new Slider(ROOT_CONTAINER, CONTAINER_ID, CONTROLS_CONTAINER, MARGINS);
+const slider = new Slider(ROOT_CONTAINER, CONTAINER_ID, CONTROLS_CONTAINER, 10);
 slider.render();
