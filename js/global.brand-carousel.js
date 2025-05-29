@@ -2,7 +2,7 @@ const caroucel = document.querySelector(".brand-carousel");
 // caroucel.addEventListener('click', showMessage);
 // function showMessage(){
 //     alert('!');
-// }
+// } 
 
 const slides = [
   `<div class="brand-carousel__item">
