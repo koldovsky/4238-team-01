@@ -1,7 +1,7 @@
 .testimonials {
   text-align: center;
   padding: 90px 0px;
-  background-color: var(--background-section-light);
+  background-color: var(--background-color);
 
   .testimonials__container {
     .testimonials__subtitle {
