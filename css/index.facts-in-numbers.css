@@ -1,0 +1,56 @@
+.facts {
+  background-image: url(../img/index/facts-in-numbers-background.png);
+  background-attachment: fixed;
+  background-position: right;
+  background-size: cover;
+  padding: 80px 20px;
+  color: var(--text-color);
+}
+
+.facts__container {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.facts__subtitle {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: var(--text-alt-section-color);
+  text-transform: uppercase;
+}
+
+.facts__text {
+  font-size: 18px;
+  color: var(--text-alt-color);
+  margin-bottom: 40px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.facts__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.facts__item {
+  flex: 0 1 200px;
+}
+
+.facts__label {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-alt-color);
+  transition: color 0.3s ease;
+}
+
+.facts__label:hover {
+  color: var(--brand-color);
+}

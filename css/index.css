@@ -4,11 +4,11 @@
 @import "header-section.css";         /* Levko Sviatoslvav #1 */
 @import "index.helping-clients.css";  /* Kostantin Paholok #2 */
 @import "index.cases.css";            /* Anastasiia Dubachynska #3 */
-                                      /* no styles here - Mykhailo Mahlovanyi #4 */
+@import "index.facts-in-numbers.css"; /* Mykhailo Mahlovanyi #4 */
 @import "index.consultation.css";     /* Olena Moroz #5 */
 @import "index.why-choose-us.css";    /* Olena Moroz #6 */
 @import "index.team.css";             /* Dmytro Gerasymenko #7 */
-                                      /* no styles here - Mykhailo Mahlovanyi #8 */
+@import "index.contact-form.css";     /* Mykhailo Mahlovanyi #8 */
 @import "global.brand-carousel.css";  /* Belevtsev Dmytro #9 */
 @import "index.testimonials.css" ;    /* Ivanna Chuba #10 */
 @import "index.faq.css";              /* Dmytro Gerasymenko #11 */
