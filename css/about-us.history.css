@@ -84,6 +84,12 @@
     font-family: "Open sans", sans-serif;
     color: var(--name-color);
     line-height: 1.5;
+    a {
+      color: var(--contact-title-color);
+      text-decoration: none;
+      font-style: normal;
+      font-weight: 600;
+    }
   }
 
   .history__timeline-button {
