@@ -1,7 +1,7 @@
 .header-hero {
   max-width: 1300px;
   margin: 0 auto;
-  padding: 250px 20px 0;
+  padding: 160px 20px 0;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -64,7 +64,7 @@
     background-color: var(--brand-color);
     border: none;
   }
-
+  
   /* Кнопка з рамкою */
   .header-hero__button--transparent {
     background-color: transparent;
@@ -72,3 +72,41 @@
     color: var(--brand-color);
   }
 }
+/* Ховер для кнопки з фоном */
+.header-hero__button--color:hover {
+  background-color: var(--subtitle-color); 
+}
+
+/* Ховер для кнопки з рамкою */
+.header-hero__button--transparent:hover {
+  background-color: var(--brand-color);
+  color: var(--title-alt-color);
+}
+
+@media (max-width: 375px) {
+  .header-hero {
+    padding: 120px 16px 0;
+
+    .header-hero__title {
+      font-size: 11px;
+    }
+
+    .header-hero__subtitle {
+      font-size: 48px;
+      line-height: 1.1;
+    }
+
+    .header-hero__description {
+      font-size: 19px;
+      margin-top: 30px;
+      margin-bottom: 40px;
+    }
+
+    .header-hero__button {
+      padding: 12px 20px;
+      font-size: 14px;
+    }
+  }
+}
+
+

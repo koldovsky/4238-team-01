@@ -119,6 +119,59 @@
   height: 26px;
   fill: currentColor;
 }
+/* Телефон — underline + hover */
+.phone-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-family);
+  font-weight: bold;
+  font-size: 14px;
+  color: var(--title-color);
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+/* Іконка телефону */
+.phone-item svg {
+  width: 26px;
+  height: 26px;
+  fill: currentColor;
+  margin-top: -3px;
+  transition: fill 0.3s ease;
+}
+
+/* Цифри телефону (всередині <span>) */
+.phone-text {
+  position: relative;
+  display: inline-block;
+  color: currentColor;
+  text-decoration: none;
+}
+
+/* underline — тільки для цифр */
+.phone-text::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: currentColor;
+  transform: scaleX(1); /* з’являється одразу */
+}
+
+/* Hover: змінює колір для всього блоку */
+.phone-item:hover {
+  color: var(--brand-color);
+}
+
+/* іконка теж міняє колір */
+.phone-item:hover svg {
+  fill: var(--brand-color);
+}
+
 
 /* Показуємо в бургер-меню (опційно) */
 @media (max-width: 991.98px) {
@@ -138,4 +191,17 @@
   .phone-item {
     padding-left: 16px;
   }
+}
+@media (max-width: 375px) {
+  .navbar .container-fluid { 
+    align-items: center;
+  }
+
+  .navbar-brand img {
+    width: 230px; 
+  }
+
+  .navbar-toggler {
+    margin-left: center;
+}
 }
