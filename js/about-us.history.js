@@ -7,7 +7,7 @@ button.forEach((btn) => {
 function buttonCallback(event) {
   const textToOpen = event.target.nextElementSibling;
 
-  // event.target.innerText = "⨂";
+  // event.target.innerText = "⨂⨁✚✖";
 
   let textToClose = document.querySelector(
     ".history__timeline-description--visible"
@@ -15,13 +15,13 @@ function buttonCallback(event) {
 
   if (textToClose === textToOpen) {
     textToClose.classList.toggle("history__timeline-description--visible");
-    event.target.innerText = "⨁";
+    event.target.innerText = "✚";
   } else {
-    event.target.innerText = "⨂";
+    event.target.innerText = "✖";
     textToOpen.classList.toggle("history__timeline-description--visible");
     if (textToClose) {
       textToClose.classList.toggle("history__timeline-description--visible");
-      textToClose.previousElementSibling.innerText = "⨁";
+      textToClose.previousElementSibling.innerText = "✚";
     }
   }
 }

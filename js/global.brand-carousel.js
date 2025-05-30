@@ -1,8 +1,4 @@
 const caroucel = document.querySelector(".brand-carousel");
-// caroucel.addEventListener('click', showMessage);
-// function showMessage(){
-//     alert('!');
-// } 
 
 const slides = [
   `<div class="brand-carousel__item">
@@ -64,7 +60,7 @@ function slideLeft() {
 }
 
 function slideRight() {
-  currentIndex = ((currentIndex - 1) + slides.length) % slides.length;
+  currentIndex = (currentIndex - 1 + slides.length) % slides.length;
   renderSlides();
 }
 
