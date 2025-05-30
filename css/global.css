@@ -58,16 +58,13 @@ img {
   --footer-stroke-color: rgba(255, 255, 255, 0.2);
 
   /* Buttons */
-  --button-text-color: #ffffff;
-  /*button-text-color-light*/
-  --button-alt-text-color: var(--brand-color);
+  --btn-text-light-color: var(--title-alt-color);
+  --btn-text-dark-color: var(--title-color);
+  --btn-alt-text-color: var(--brand-color);
   --btn-bg-dark-color: #080807;
-  --btn-bg-light-color: #fff;
+  --btn-bg-light-color: var(--background-color);
   --btn-alt-bg-color: var(--brand-color);
-
-  /*change names of colors*/
-  --button-background-color: var(--brand-color);
-  --button-background-hover-color: var(--bg-color);
+  --btn-bg-hover-color: var(--bg-color);
 }
 
 body {

@@ -1,84 +1,110 @@
-// Configurations;
-    const ROOT_CONTAINER = 'cases__sider__root'
-    const CONTAINER_ID = 'casses-slider';
-    const CONTROLS_CONTAINER = 'cases__sider__controls';
-    const MARGINS = 25;
+/**
+ * @Slider
+ * @param root_container_id: string
+ * @param container_id: string
+ * @param controls_container_id: string
+ * @param margins?: number;
+ */
+class Slider {
+    constructor(root_container_id, container_id, controls_container_id, margins = 25) {
+        // initing Slider class;
+        const [back_control, forward_control] = document.getElementById(controls_container_id).children;
+        this.slider_wrapper = document.getElementById(root_container_id);
+        this.container = document.getElementById(container_id);
+        this.back_control = back_control;
+        this.forward_control = forward_control
+        this.slide_width = this.container.children[0].clientWidth;
+        this.margins = margins;
 
+        // invalidate size;
+        this.invalidateStatement();
 
-    const sliderWrapper = document.getElementById(ROOT_CONTAINER);
-    const container = document.getElementById(CONTAINER_ID);
-    
-    const [backControl, forwardControl] = document.getElementById(CONTROLS_CONTAINER).children;
-    
-    // Remebering static size of slider element;
-    const slideWidth = container.children[0].clientWidth;
-
-    const getInitialState = () => ({
-        VIEW_BAR_LIMIT: (Math.floor(sliderWrapper.clientWidth / (slideWidth + MARGINS)) || 1),
-        from: 0,
-        to: Math.floor(sliderWrapper.clientWidth / slideWidth) - 1
-    });
-    
-    // initing slider logic variables;
-    let { VIEW_BAR_LIMIT, from, to } = getInitialState();
-    let timeoutInterval = null;
-
-    // Move carusel back;
-    const onBack = () => {
-        from -= VIEW_BAR_LIMIT;
-        to -= VIEW_BAR_LIMIT;
-
-        render(false);
-    };
-
-    // Move carusel forward;
-    const onForward = () => {
-        from += VIEW_BAR_LIMIT;
-        to += VIEW_BAR_LIMIT;
-        render(true);
+        // attaching events;
+        this.back_control.onclick = this.moveBack.bind(this);
+        this.forward_control.onclick = this.moveForward.bind(this);
+        window.onresize = this.invalidateSize.bind(this)
+    }
+    // method to invalidate statemnet;
+    invalidateStatement() {
+        this.limit = this.getDynamicStatement().limit;
+        this.from = this.getDynamicStatement().from;
+        this.to = this.getDynamicStatement().to;
     }
 
-    // Detecting dynamic changing window size;
-    window.onresize = () => {
-        const initData = getInitialState();
-        from = initData.from;
-        to = initData.to;
-        VIEW_BAR_LIMIT = initData.VIEW_BAR_LIMIT;
-        render();
-    }
-
-    // attaching the event to DOM elemnt responsible for moving slides;
-    backControl.onclick = onBack;
-    forwardControl.onclick = onForward;
-
-    // Global entry function;
-    function render(isForw) {
-        const slides = container.children;
-
-        // validating current slides set;
-        if(to >= slides.length) {
-            to = getInitialState().to;
-            from = getInitialState().from;
-        } else if(from < 0) {
-            from = slides.length - VIEW_BAR_LIMIT;
-            to = slides.length - 1;
+    // get current actual statements;
+    getDynamicStatement() {
+        return {
+            limit: (Math.floor(this.slider_wrapper.clientWidth / (this.slide_width + (this.margins ))) || 1),
+            from: 0,
+            to: Math.floor(this.slider_wrapper.clientWidth /(this.slide_width )) - 1
         }
-    
-        Array.from(slides).forEach((slide, index) => {
-            // checking is visible
-            const isVisible = index >= from && index <= to;
+    }
 
-            // removing animation class by default;
-            slide.className = slide.className.replace('cases__is-active', '') 
+    // invalidate size of Slider;
+    invalidateSize() {
+        this.invalidateStatement();
+        this.render();
+        this.container.style.transform = `translateX(-0px)`
+    }
+
+    // move slider to 1 slide back;
+    moveBack() {
+        this.from -= 1;
+        this.to -= 1;
+
+        this.validateNextTick();
+        this.render();
+    }
+
+    // move slider to 1 slide forward;
+    moveForward() {
+        this.from += 1;
+        this.to += 1;
+
+        this.validateNextTick();
+        this.render();
+    }
+
+    // validate next tick, check statement to prevent infinity scroll
+    validateNextTick() {
+        const itemsCount = this.container.children.length;
+        if (this.from < 0) {
+            this.from = itemsCount - this.limit - 1;
+            this.to = itemsCount - 1;
+        }
+        else if (this.to >= itemsCount)
+            this.invalidateStatement();
+
+        // centring slider regarding to current statemnets;
+        this.container.style.transform = `translateX(-${this.from * (this.slide_width + this.margins)}px)`
+    }
+
+    // render current view bar with actual statements;
+    render() {
+        const slides = Array.from(this.container.children);
+        slides.forEach((slide, index) => {
+            const isVisible = index >= this.from && index <= this.to;
             
-            // Do animation;
-            if(isVisible && typeof isForw === 'boolean') 
-                slide.className+= isForw ? ' cases__animate-forward' : ' cases__animate-back ';
-            
-            // Control of DOM    
-            slide.style.display = isVisible ? 'inline-block' : 'none'
+            // animate next tick;
+            if (!isVisible) {
+                setTimeout(() => {
+                    slide.style.visibility = 'hidden'
+                }, 1000)
+            }
+            else {
+                slide.style.visibility = 'visible'
+            }
         });
-    };
+    }
 
-    // Doing initial render;
-    render();
+}
+
+// Setting varriables;
+const ROOT_CONTAINER = 'cases__sider__root'
+const CONTAINER_ID = 'casses-slider';
+const CONTROLS_CONTAINER = 'cases__sider__controls';
+const MARGINS = 15;
+
+// Initing our slider & calling render;
+const slider = new Slider(ROOT_CONTAINER, CONTAINER_ID, CONTROLS_CONTAINER, 10);
+slider.render();
