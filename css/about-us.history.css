@@ -24,7 +24,7 @@
 }
 
 .history__title {
-  font-size: 13px;
+  font-size: 15px;
   font-weight: bold;
   font-family: "Open sans", sans-serif;
   color: var(--brand-color);
@@ -36,6 +36,7 @@
   padding-top: 5%;
   padding-bottom: 5%;
   font-size: 44px;
+  font-weight: 600;
   font-family: "Crimson pro", serif;
 }
 
@@ -138,7 +139,7 @@
     grid-template-columns: 1fr;
   }
 
-  .history__image-container {
+  /* .history__image-container {
     width: 100%;
-  }
+  } */
 }
