@@ -17,34 +17,61 @@
 
 .consultation__subtitle {
   font-family: var(--title-font);
-  font-size: 44px;
+  font-size: 38px;
   color: var(--title-color);
   font-weight: 500;
   text-transform: capitalize;
   margin-bottom: 20px;
+  line-height: 40px;
+
+  @media (min-width: 768px) {
+    font-size: 44px;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 50px;
+  }
 }
 
 .consultation__description {
   font-size: 19px;
   font-family: var(font-family);
   color: var(--subtitle-color);
+  margin-bottom: 20px;
+}
+
+.consultation__description-highlight {
+  color: var(--brand-color);
+  text-decoration: underline;
 }
 
 .consultation__phone-number {
-  font-size: 30px;
+  font-size: 28px;
   font-family: var(font-family);
   color: var(--title-color);
-  font-weight: 700;
+  font-weight: bold;
   text-transform: capitalize;
   margin-bottom: 48px;
+
+  &:hover {
+    text-decoration: underline;
+    color: var(--brand-color);
+    cursor: pointer;
+  }
 }
 
 .consultation__request-button {
+  display: inline-block;
   padding: 14px 32px;
-  font-size: 16px;
+  font-size: 15, 4px;
+  font-weight: 500;
   background-color: var(--brand-color);
   color: white;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+
+  &:hover {
+    background-color: var(--bg-color);
+  }
 }

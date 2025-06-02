@@ -18,6 +18,7 @@
       height: auto;
     }
   }
+
   .helping-clients__content {
     flex: 1 1 50%;
 
@@ -29,10 +30,10 @@
       margin-bottom: 1rem;
       text-align: left;
     }
-    
-      @media (min-width: 768px) {
-        font-size: 16px;
-      }
+
+    @media (min-width: 768px) {
+      font-size: 16px;
+    }
 
     .helping-clients__subtitle {
       font-family: var(--title-font);
@@ -46,16 +47,16 @@
       .helping-clients__highlight {
         color: var(--brand-color);
       }
-    
+
       @media (min-width: 768px) {
         font-size: 44px;
       }
+
       @media (min-width: 1024px) {
         font-size: 50px;
       }
-
-
     }
+
     .helping-clients__description {
       color: var(--subtitle-color);
       font-size: 19px;
@@ -63,7 +64,7 @@
       margin-top: 1rem;
       margin-bottom: 1rem;
     }
-  
+
     .helping-clients__text {
       font-size: 17px;
       font-weight: 400px;
@@ -71,7 +72,7 @@
       text-align: left;
       color: var(--text-color);
     }
-      
+
     .helping-clients__features {
       list-style: none;
       padding: 0;
@@ -79,7 +80,6 @@
       display: flex;
       flex-direction: column;
       gap: 2rem;
-      
 
       .helping-clients__feature-container {
         display: flex;
@@ -87,32 +87,33 @@
         gap: 1rem;
         align-items: flex-start;
       }
-        .helping-clients__feature-icon {
-          width: 50px;
-          height: 50px;
-          margin-bottom: 12px;
-        }
-        .helping-clients__feature-content {
+
+      .helping-clients__feature-icon {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 12px;
+      }
+
+      .helping-clients__feature-content {
         display: flex;
         flex-direction: column;
-        }
+      }
 
-        .helping-clients__feature-title {
-          font-size: 22px;
-          font-weight: 700;
-          margin-bottom: 6px;
-          color: var(--title-color);
-        }
-          @media (min-width: 768px) {
+      .helping-clients__feature-title {
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 6px;
+        color: var(--title-color);
+      }
+
+      @media (min-width: 768px) {
         font-size: 24px;
       }
 
-        .helping-clients__feature-text {
-          font-size: 17px;
-          color: var(--text-color);
-        }
+      .helping-clients__feature-text {
+        font-size: 17px;
+        color: var(--text-color);
       }
     }
   }
-
-
+}

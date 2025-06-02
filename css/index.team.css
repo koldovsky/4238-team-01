@@ -141,9 +141,9 @@
 
       .section-team__button {
         padding: 18px 30px;
-        background-color: var(--brand-color);
+        background-color: var(--btn-alt-bg-color);
         border-style: none;
-        color: var(--button-text-color); /* temporary color. will be changed to '--button-text-color' */
+        color: var(--btn-text-light-color);
         text-decoration: none;
         font-weight: 700;
         font-size: 15.4px;
@@ -153,7 +153,7 @@
         transition: background-color 0.2s ease-in, border-color 0.2s ease-in;
 
         &:hover {
-          background-color: var(--button-background-hover-color);
+          background-color: var(--btn-bg-hover-color);
         }
       }
     }

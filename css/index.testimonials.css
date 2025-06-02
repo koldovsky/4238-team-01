@@ -1,0 +1,105 @@
+.testimonials {
+  text-align: center;
+  padding: 90px 0;
+  background-color: var(--background-color);
+
+  .testimonials__container {
+    padding: 0 20px;
+
+    .testimonials__subtitle {
+      font-size: 13px;
+      font-weight: bold;
+      color: var(--text-alt-section-color);
+    }
+
+    .testimonials__title {
+      font-size: 38px;
+      color: var(--title-color);
+      font-family: var(--title-font);
+      font-weight: bold;
+
+      @media (min-width: 750px) {
+        font-size: 44px;
+      }
+    }
+
+    .testimonials__description {
+      font-size: 19px;
+      color: var(--subtitle-color);
+      font-weight: 600;
+    }
+
+    .testimonials__feedback-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 0;
+
+      .testimonials__feedback-item {
+        max-width: 360px;
+        padding: 30px 20px;
+        background-color: var(--background-color);
+        text-align: center;
+        border: 1px solid #e0e0e0;
+        box-shadow: 0 2px 15px rgba(62, 67, 85, 0.01);
+
+        .testimonials__feedback-image-wrapper img {
+          width: 80px;
+          border-radius: 50%;
+          margin-bottom: 15px;
+          border: 3px solid var(--alt-card-border);
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        .testimonials__client-name {
+          margin: 0 0 5px;
+          font-size: 20px;
+          color: var(--subtitle-color);
+          font-weight: bold;
+        }
+
+        .testimonials__company {
+          font-size: 14px;
+          color: var(--footer-back-ico-color);
+          font-style: italic;
+          font-weight: 600;
+          margin: 0;
+        }
+
+        .testimonials__feedback-text {
+          font-size: 17px;
+          color: var(--text-color);
+          margin: 20px 0;
+          line-height: 27px;
+          font-weight: 400;
+        }
+
+        .testimonials__date {
+          font-size: 14px;
+          color: var(--card-title-color);
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    .testimonials__feedback-list {
+      flex-direction: column;
+      gap: 20px;
+      padding: 20px 0;
+    }
+
+    .testimonials__title {
+      font-size: 32px;
+    }
+
+    .testimonials__feedback-item {
+      max-width: 100%;
+    }
+  }
+}

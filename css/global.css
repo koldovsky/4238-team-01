@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
 *,
 *::before,
 *::after {
@@ -20,19 +21,20 @@ img {
   --title-font: "Crimson Pro", serif;
   --font-family: "Open Sans", sans-serif;
   font-family: var(--font-family);
-  
+
   /* Text Colors */
   --title-color: #3e4355;
   --title-alt-color: #ffffff;
   --title-section-color-light: #fff;
   --subtitle-color: #545454;
-  --contact-title-color: #5E6A95;
+  --contact-title-color: #5e6a95;
   --subtitle-alt-color: #c2c2c2;
   --text-color: #6c6c6d;
   --text-alt-color: #bcbcbc;
-  --text-section-color: rgb(194,194,194);
-  --text-alt-section-color: #bb8c66;
-  
+  --text-section-color: rgb(194, 194, 194);
+  --text-alt-section-color: var(--brand-color);
+  --name-color: #555;
+
   /* Brand and background Colors */
   --brand-color: #c39167;
   --background-color: #ffffff;
@@ -41,32 +43,37 @@ img {
   --bg-color: #3e4355;
   --background-section-light: #f9f9f9;
   --background-section-dark: #3e4355;
+  --background-section-alt-dark: rgba(37, 43, 63, 0.92);
 
   /* Cards */
   --card-border-light: #f5f5f5;
   --card-title-color: #575c71;
   --brand-card-color: #474b5e;
+  --card-border: #eee;
 
   /* Footer */
-  --footer-back-ico-color: #c39167;
+  --footer-back-ico-color: var(--brand-color);
   --footer-ico-color: #ffffff;
-  --card-border-light: #f5f5f5; 
-  --footer-stroke-color:  rgba(255, 255, 255, 0.2); 
-  
-  /* Buttons */
-  --button-text-color: #ffffff; /*button-text-color-light*/
-  --button-alt-text-color: var(--brand-color);
-  --btn-bg-dark-color: #080807;
-  --btn-bg-light-color: #fff;
-  --btn-alt-bg-color: #c39167;
+  --card-border-light: #f5f5f5;
+  --footer-stroke-color: rgba(255, 255, 255, 0.2);
 
-  /*change names of colors*/
-  --button-background-color: var(--brand-color);
-  --button-background-hover-color: var(--bg-color);
+  /* Buttons */
+  --btn-text-light-color: var(--title-alt-color);
+  --btn-text-dark-color: var(--title-color);
+  --btn-alt-text-color: var(--brand-color);
+  --btn-bg-dark-color: #080807;
+  --btn-bg-light-color: var(--background-color);
+  --btn-alt-bg-color: var(--brand-color);
+  --btn-bg-hover-color: var(--bg-color);
 }
 
 body {
   font-family: var(--font-family);
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .section-container {

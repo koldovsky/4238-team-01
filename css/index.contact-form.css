@@ -1,0 +1,51 @@
+.contact-form {
+  background-image: linear-gradient(var(--background-section-alt-dark), var(--background-section-alt-dark)), url(../img/index/video-background.png);
+  background-attachment: fixed;
+  background-position: 80%;
+  background-size: cover;
+  padding: 100px 20px;
+  position: relative;
+  text-align: center;
+  color: var(--btn-bg-light-color);
+}
+
+.contact-form__container {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.contact-form__title {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.contact-form__text {
+  font-size: 18px;
+  color: var(--subtitle-alt-color);
+  font-style: italic;
+  margin-bottom: 40px;
+}
+
+.contact-form__link {
+  color: var(--text-alt-section-color);
+  text-decoration: underline;
+}
+
+.contact-form__play-button {
+  background-color: var(--text-alt-section-color);
+  border: none;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.contact-form__play-icon {
+  color: var(--btn-bg-light-color);
+  font-size: 32px;
+}

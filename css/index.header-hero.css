@@ -1,65 +1,112 @@
 .header-hero {
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 200px 40px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    z-index: 1;
-    position: relative;
-    
-    .header-hero__title {
-        font-family: var(--font-family);
-        font-size: 12px;
-        font-weight: bold;
-        /* color: #B08C5D; */
-        color: var(--brand-color);
-        text-transform: uppercase;
-        margin-bottom: 20px;
-      }
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 160px 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  z-index: 1;
 
-      .header-hero__subtitle {
-        font-family: var(--title-font);
-        font-size: 56px;
-        font-weight: bold;
-        color: var(--title-color);
-      }
-
-      .header-hero__description {
-        font-family: var(--font-family);
-        font-size: 19px;
-        color: var(--title-color)
-        }
-
-        .header-hero__buttons {
-        display: flex;
-        gap: 20px;
-
-        }
-        .header-hero__button {
-            padding: 14px 28px;
-            font-weight: 600;
-            /* border-radius: 6px; */
-            transition: all 0.3s ease;
-            font-size: 16px;
-          }
-
-        .header-hero__button--color{
-            font-family: var(--font-family);
-            color: var(--title-alt-color);
-            background-color: var(--brand-color);
-            border: none;
-            text-decoration: none;
-
-        }
-        .header-hero__button--transparent {
-            background-color: transparent;
-            border: 2px solid var(--brand-color);
-            color: var(--brand-color);
-            text-decoration: none;
-          }
-          
-
-
+  /* Заголовок блоку */
+  .header-hero__title {
+    font-family: var(--font-family);
+    font-size: 13px;
+    font-weight: bold;
+    color: var(--brand-color);
+    text-transform: uppercase;
+    margin-bottom: 24px; /* Відступ після "Law Firm" */
   }
- 
+
+  /* Заголовок в 2 рядки */
+  .header-hero__subtitle {
+    font-family: var(--title-font);
+    font-size: 78px;
+    font-weight: 500;
+    color: var(--title-color);
+    line-height: 0.9; /* Більша висота рядка */
+
+    &:not(:last-of-type) {
+      margin-bottom: 20px; /* Відступ між "Use..." і "Legal..." */
+    }
+  }
+
+  /* Опис під заголовком */
+  .header-hero__description {
+    font-family: var(--font-family);
+    font-size: 19px;
+    font-weight: 400;
+    color: var(--title-color);
+    margin-top: 40px;
+    margin-bottom: 50px; /* Відступ до кнопок */
+    line-height: 1.6;
+  }
+
+  /* Контейнер кнопок */
+  .header-hero__buttons {
+    display: flex;
+    gap: 20px;
+  }
+
+  /* Кнопки */
+  .header-hero__button {
+    padding: 14px 28px;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+  }
+
+  /* Кнопка з фоном */
+  .header-hero__button--color {
+    font-family: var(--font-family);
+    color: var(--title-alt-color);
+    background-color: var(--brand-color);
+    border: none;
+  }
+  
+  /* Кнопка з рамкою */
+  .header-hero__button--transparent {
+    background-color: transparent;
+    border: 2px solid var(--brand-color);
+    color: var(--brand-color);
+  }
+}
+/* Ховер для кнопки з фоном */
+.header-hero__button--color:hover {
+  background-color: var(--subtitle-color); 
+}
+
+/* Ховер для кнопки з рамкою */
+.header-hero__button--transparent:hover {
+  background-color: var(--brand-color);
+  color: var(--title-alt-color);
+}
+
+@media (max-width: 375px) {
+  .header-hero {
+    padding: 120px 16px 0;
+
+    .header-hero__title {
+      font-size: 11px;
+    }
+
+    .header-hero__subtitle {
+      font-size: 48px;
+      line-height: 1.1;
+    }
+
+    .header-hero__description {
+      font-size: 19px;
+      margin-top: 30px;
+      margin-bottom: 40px;
+    }
+
+    .header-hero__button {
+      padding: 12px 20px;
+      font-size: 14px;
+    }
+  }
+}
+
+
