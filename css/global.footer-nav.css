@@ -35,6 +35,10 @@
   text-decoration: none;
 }
 
+.footer-nav__cta-link:hover {
+  text-decoration: underline;
+}
+
 .footer-nav__social-list {
   display: flex;
   gap: 1rem;
@@ -46,6 +50,10 @@
 .footer-nav__social-ico {
   display: block;
   fill: var(--footer-back-ico-color);
+}
+
+.footer-nav__social-ico:hover {
+  filter: brightness(75%);
 }
 
 .footer-nav__nav-title {
@@ -181,6 +189,7 @@
   .footer-nav__container {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
   }
 
   .footer-nav__column {
@@ -208,7 +217,7 @@
   }
 
   .footer-nav__newsletter {
-    max-width: 300px;
+    max-width: 270px;
     margin: 0;
   }
 
