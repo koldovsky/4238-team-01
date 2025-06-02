@@ -124,9 +124,6 @@
 
             .section-team__attorney-image-alt {
               transform: rotateY(180deg);
-              display: flex;
-              align-items: center;
-              justify-content: center;
             }
           }
         }
