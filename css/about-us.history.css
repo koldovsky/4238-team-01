@@ -201,4 +201,7 @@
     /* width: auto; */
     object-fit: none;
   }
+  .history__hidden-story {
+    max-height: 950px;
+  }
 }

@@ -34,7 +34,7 @@
   justify-content: center;
   align-items: center;
 
-  min-width: 160px; /* width: 160px */
+  min-width: 160px;
   height: 120px;
 
   border-radius: 6px;
@@ -61,13 +61,12 @@
 
 .brand-carousel__button svg {
   fill: var(--brand-color);
-  /* #987962; */
   width: 30px;
   height: 30px;
   border: 2px solid var(--brand-color);
   border-radius: 50%;
   &:hover {
-    fill: lightgray;
+    fill: var(--card-border-light);
   }
 }
 
@@ -78,7 +77,3 @@
 .brand-carousel__button--right svg {
   transform: rotate(0deg);
 }
-
-/* @media (min-width: 600px) {
-  
-} */
