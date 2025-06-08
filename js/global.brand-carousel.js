@@ -1,5 +1,3 @@
-const caroucel = document.querySelector(".brand-carousel");
-
 const frameOpenTagL = '<div class="brand-carousel__frame">';
 const frameOpenTagR = '<div class="brand-carousel__frame offset">';
 const frameCloseTag = "</div>";
@@ -27,12 +25,11 @@ const slides = [
         </div>`,
 ];
 
-// const frame = document.querySelector('.brand-carousel__frame');
 let framePositionX = 0;
-// const frame = document.querySelector(".brand-carousel__track");
-const carouselTrack = document.querySelector(".brand-carousel__track");
-// const frame = document.querySelector(".brand-carousel__frame");
+let currentIndex = 0;
 let frame;
+
+const carouselTrack = document.querySelector(".brand-carousel__track");
 const btnLeft = document.querySelector(".brand-carousel__button--left");
 const btnRight = document.querySelector(".brand-carousel__button--right");
 
@@ -40,7 +37,6 @@ window.addEventListener("resize", renderSlides);
 btnLeft.addEventListener("click", slideLeft);
 btnRight.addEventListener("click", slideRight);
 
-let currentIndex = 0;
 renderSlides();
 
 function renderSlides() {
@@ -63,11 +59,10 @@ function renderSlides() {
   }
 
   const gap = offset * 10;
-  const padding = 20;
-  let currentWidth = (offset + 1) * 160 + gap + padding + "px";
+  let currentWidth = (offset + 1) * 160 + gap + "px";
 
-  carouselTrack.style.maxWidth = currentWidth;
-  //   html.push(slides[(currentIndex + (++offset)) % slides.length]); // hidden slide
+  carouselTrack.style.width = currentWidth;
+  carouselTrack.style.justifySelf = "center";
   html.push(frameCloseTag);
   carouselTrack.innerHTML = html.join("");
 }
@@ -92,10 +87,10 @@ function renderSlidesLeft() {
   }
 
   const gap = offset * 10;
-  const padding = 20;
-  let currentWidth = (offset + 1) * 160 + gap + padding + "px";
+  let currentWidth = (offset + 1) * 160 + gap + "px";
 
-  carouselTrack.style.maxWidth = currentWidth;
+  carouselTrack.style.width = currentWidth;
+  carouselTrack.style.justifySelf = "flex-start";
   html.push(slides[(currentIndex + ++offset) % slides.length]); // hidden slide
   html.push(frameCloseTag);
   carouselTrack.innerHTML = html.join("");
@@ -124,10 +119,9 @@ function renderSlidesRight() {
   }
 
   const gap = offset * 10;
-  const padding = 20;
-  let currentWidth = (offset + 1) * 160 + gap + padding + "px";
-
-  carouselTrack.style.maxWidth = currentWidth;
+  let currentWidth = (offset + 1) * 160 + gap + "px";
+  carouselTrack.style.justifySelf = "flex-start";
+  carouselTrack.style.width = currentWidth;
   html.push(frameCloseTag);
   carouselTrack.innerHTML = html.join("");
 
@@ -135,13 +129,13 @@ function renderSlidesRight() {
 }
 
 function slideLeft() {
-  framePositionX = -160;
+  framePositionX = -170;
   renderSlidesLeft();
   setTimeout(translate);
 }
 
 function slideRight() {
-  framePositionX = 10;
+  framePositionX = 0;
   renderSlidesRight();
   setTimeout(translate);
 }
