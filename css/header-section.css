@@ -4,9 +4,7 @@
   max-width: 100vw;
   overflow: hidden;
   background-position: 60%;
-  /* center */
   background-repeat: no-repeat;
-  /* position: relative; */
   padding-bottom: 400px;
 
   @media (max-width: 590px) {
@@ -15,5 +13,4 @@
       padding-bottom: 300px;
     }
   }
-  
 }
