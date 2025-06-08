@@ -62,7 +62,6 @@ function renderSlides() {
   let currentWidth = (offset + 1) * 160 + gap + "px";
 
   carouselTrack.style.width = currentWidth;
-  carouselTrack.style.justifySelf = "center";
   html.push(frameCloseTag);
   carouselTrack.innerHTML = html.join("");
 }
@@ -90,7 +89,6 @@ function renderSlidesLeft() {
   let currentWidth = (offset + 1) * 160 + gap + "px";
 
   carouselTrack.style.width = currentWidth;
-  carouselTrack.style.justifySelf = "flex-start";
   html.push(slides[(currentIndex + ++offset) % slides.length]); // hidden slide
   html.push(frameCloseTag);
   carouselTrack.innerHTML = html.join("");
@@ -120,7 +118,6 @@ function renderSlidesRight() {
 
   const gap = offset * 10;
   let currentWidth = (offset + 1) * 160 + gap + "px";
-  carouselTrack.style.justifySelf = "flex-start";
   carouselTrack.style.width = currentWidth;
   html.push(frameCloseTag);
   carouselTrack.innerHTML = html.join("");
