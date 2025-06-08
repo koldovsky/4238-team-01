@@ -1,6 +1,6 @@
 .team {
-  background-image: url(../img/global/alt-background.webp);
   padding: 90px 24px;
+  position: relative;
   -webkit-font-smoothing: antialiased;
 
   @media (min-width: 768px) {
@@ -15,11 +15,46 @@
     padding: 120px 15px;
   }
 
+  /* background animation switch styles */
+  .team__background,
+  .team__background-alt {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: opacity 0.8s ease-in;
+    z-index: -1;
+  }
+
+  .team__background {
+    background-image: url(../img/global/alt-background.webp);
+    opacity: 1;
+  }
+
+  .team__background-alt {
+    background-attachment: fixed;
+    background-image: linear-gradient(var(--background-section-alt-light), var(--background-section-alt-light)), url(../img/attorneys/marvel-background.jpg);
+    background-position: bottom center;
+    background-size: cover;
+    opacity: 0;
+  }
+
+  &.flipped {
+    .team__background {
+      opacity: 0;
+    }
+
+    .team__background-alt {
+      opacity: 1;
+    }
+  }
+
   .team__attorneys {
-    display: grid;
     column-gap: 30px;
-    row-gap: 50px;
+    display: grid;
     justify-items: center;
+    row-gap: 50px;
 
     @media (min-width: 480px) {
       grid-template-columns: repeat(2, 1fr);
@@ -44,41 +79,216 @@
         max-width: 370px;
       }
 
+      /* image animation switch styles */
       .team__attorney-image-wrapper {
-        width: 100%;
         aspect-ratio: 185 / 211.4885;
-      }
-
-      .team__attorney-image {
+        clip-path: inset(1px); /* to avoid visual glitches */
+        display: grid;
+        position: relative;
         width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: top center;
+        --g: 4px; /* the gap */
+
+        .team__attorney-image {
+          cursor: pointer;
+          grid-area: 1/1;
+          height: 100%;
+          object-fit: cover;
+          object-position: top center;
+          transition: 0.6s 0.1s;
+          width: 100%;
+          --_p: calc(-1 * var(--g));
+
+          &:first-child {
+            clip-path: polygon(0 0, calc(185% + var(--_p)) 0, 0 calc(185% + var(--_p)));
+          }
+
+          &:last-child {
+            clip-path: polygon(100% 100%, 185% calc(0% - var(--_p)), calc(0% - var(--_p)) 185%);
+          }
+        }
+
+        /* image switch states */
+        &.flipped {
+          .team__attorney-image {
+            &:last-child {
+              --_p: calc(170% - var(--g));
+            }
+
+            &:first-child {
+              --_p: calc(-170% - var(--g));
+            }
+          }
+        }
       }
 
+      /* flip name animation styles */
       .team__attorney-name {
-        color: var(--card-title-color);
-        font-weight: 700;
+        color: transparent;
         font-size: 22px;
-        text-align: center;
+        font-weight: 700;
         margin-top: 20px;
-      }
+        overflow: hidden;
+        perspective: 1000px;
+        position: relative;
+        text-align: center;
 
-      @media (min-width: 768px) {
-        font-size: 23px;
-      }
+        @media (min-width: 768px) {
+          font-size: 23px;
+        }
 
-      @media (min-width: 992px) {
-        font-size: 24px;
+        @media (min-width: 992px) {
+          font-size: 24px;
+        }
+
+        &::before,
+        &::after {
+          align-items: center;
+          backface-visibility: hidden;
+          color: var(--card-title-color);
+          content: attr(data-original);
+          display: flex;
+          font-size: inherit;
+          font-weight: inherit;
+          height: 100%;
+          justify-content: center;
+          left: 0;
+          position: absolute;
+          top: 0;
+          transition: all 0.6s ease-in-out;
+          width: 100%;
+        }
+
+        &::before {
+          opacity: 1;
+          transform: translateY(0) rotateX(0deg);
+          z-index: 2;
+        }
+
+        &::after {
+          content: attr(data-flipped);
+          opacity: 0;
+          transform: translateY(-50%) rotateX(90deg);
+          z-index: 1;
+        }
+
+        /* flipped state */
+        &.flipped {
+          &::before {
+            opacity: 0;
+            transform: translateY(50%) rotateX(90deg);
+          }
+
+          &::after {
+            opacity: 1;
+            transform: translateY(0) rotateX(0deg);
+          }
+        }
       }
 
       .team__attorney-position {
         color: var(--brand-color);
-        font-weight: 600;
         font-size: 14px;
         font-style: italic;
-        text-align: center;
+        font-weight: 600;
         margin-top: 20px;
+        text-align: center;
+      }
+    }
+  }
+
+  .team__action {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    text-align: center;
+
+    @media (min-width: 992px) {
+      margin-top: 55px;
+    }
+
+    .team__flip-button {
+      border-style: none;
+      color: transparent;
+      cursor: pointer;
+      font-size: 15.4px;
+      font-weight: 700;
+      letter-spacing: 0.462px;
+      min-height: 65px;
+      min-width: 200px;
+      padding: 18px 30px;
+      perspective: 1000px;
+      position: relative;
+      text-decoration: none;
+
+      &::before,
+      &::after {
+        align-items: center;
+        backface-visibility: hidden;
+        background: var(--btn-alt-bg-color);
+        color: var(--btn-text-light-color);
+        content: attr(data-original);
+        display: flex;
+        font-size: inherit;
+        font-weight: inherit;
+        height: 100%;
+        justify-content: center;
+        left: 0;
+        letter-spacing: inherit;
+        overflow: hidden;
+        position: absolute;
+        text-transform: inherit;
+        top: 0;
+        transition: all 0.5s ease-in-out;
+        white-space: nowrap;
+        width: 100%;
+      }
+
+      &::before {
+        opacity: 1;
+        transform: translateY(0) rotateX(0deg);
+        z-index: 2;
+      }
+
+      &::after {
+        background: var(--btn-alt-bg-color);
+        color: var(--btn-text-light-color);
+        content: attr(data-flipped);
+        opacity: 0;
+        transform: translateY(-50%) rotateX(90deg);
+        z-index: 1;
+      }
+
+      /* Button flipped state */
+      &.flipped {
+        &::before {
+          background: var(--btn-bg-hover-color);
+          opacity: 0;
+          transform: translateY(50%) rotateX(90deg);
+        }
+
+        &::after {
+          opacity: 1;
+          transform: translateY(0) rotateX(0deg);
+          background: var(--btn-bg-hover-color);
+        }
+      }
+
+      &:active {
+        &::before,
+        &::after {
+          transform: translateY(0) rotateX(0deg);
+        }
+
+        &.flipped {
+          &::before {
+            transform: translateY(50%) rotateX(90deg);
+          }
+
+          &::after {
+            transform: translateY(0) rotateX(0deg);
+          }
+        }
       }
     }
   }
