@@ -11,17 +11,22 @@
 
 .brand-carousel__track {
   display: flex;
-  /* flex-wrap: wrap; */
-  justify-content: center;
-
-  overflow-y: hidden;
+  justify-content: flex-start;
   overflow-x: hidden;
+}
+.brand-carousel__frame {
+  display: flex;
+  justify-content: flex-start;
 
   height: 140px;
-  /* min-width: 120; */
-
-  padding: 10px;
+  padding: 10px 0;
   gap: 10px;
+
+  transition: transform 0.5s;
+}
+
+.offset {
+    transform: translateX(-160px);
 }
 
 .brand-carousel__item {
@@ -29,7 +34,7 @@
   justify-content: center;
   align-items: center;
 
-  width: 160px;
+  min-width: 160px; /* width: 160px */
   height: 120px;
 
   border-radius: 6px;

@@ -1,5 +1,8 @@
 const caroucel = document.querySelector(".brand-carousel");
 
+const frameOpenTagL = '<div class="brand-carousel__frame">';
+const frameOpenTagR = '<div class="brand-carousel__frame offset">';
+const frameCloseTag = "</div>";
 const slides = [
   `<div class="brand-carousel__item">
             <img width="120" src="img/global/ibm.svg" alt="IBM" />
@@ -24,7 +27,12 @@ const slides = [
         </div>`,
 ];
 
-const itemContainer = document.querySelector(".brand-carousel__track");
+// const frame = document.querySelector('.brand-carousel__frame');
+let framePositionX = 0;
+// const frame = document.querySelector(".brand-carousel__track");
+const carouselTrack = document.querySelector(".brand-carousel__track");
+// const frame = document.querySelector(".brand-carousel__frame");
+let frame;
 const btnLeft = document.querySelector(".brand-carousel__button--left");
 const btnRight = document.querySelector(".brand-carousel__button--right");
 
@@ -33,35 +41,113 @@ btnLeft.addEventListener("click", slideLeft);
 btnRight.addEventListener("click", slideRight);
 
 let currentIndex = 0;
+renderSlides();
 
 function renderSlides() {
   const html = [];
+  html.push(frameOpenTagL);
   html.push(slides[currentIndex]);
+  let offset = 0;
 
   if (window.matchMedia("(min-width: 425px)").matches) {
-    html.push(slides[(currentIndex + 1) % slides.length]);
+    html.push(slides[(currentIndex + ++offset) % slides.length]);
     if (window.matchMedia("(min-width: 768px)").matches) {
-      html.push(slides[(currentIndex + 2) % slides.length]);
+      html.push(slides[(currentIndex + ++offset) % slides.length]);
       if (window.matchMedia("(min-width: 1024px)").matches) {
-        html.push(slides[(currentIndex + 3) % slides.length]);
+        html.push(slides[(currentIndex + ++offset) % slides.length]);
         if (window.matchMedia("(min-width: 1280px)").matches) {
-          html.push(slides[(currentIndex + 4) % slides.length]);
+          html.push(slides[(currentIndex + ++offset) % slides.length]);
         }
       }
     }
   }
 
-  itemContainer.innerHTML = html.join("");
+  const gap = offset * 10;
+  const padding = 20;
+  let currentWidth = (offset + 1) * 160 + gap + padding + "px";
+
+  carouselTrack.style.maxWidth = currentWidth;
+  //   html.push(slides[(currentIndex + (++offset)) % slides.length]); // hidden slide
+  html.push(frameCloseTag);
+  carouselTrack.innerHTML = html.join("");
+}
+
+function renderSlidesLeft() {
+  const html = [];
+  html.push(frameOpenTagL);
+  html.push(slides[currentIndex]);
+  let offset = 0;
+
+  if (window.matchMedia("(min-width: 425px)").matches) {
+    html.push(slides[(currentIndex + ++offset) % slides.length]);
+    if (window.matchMedia("(min-width: 768px)").matches) {
+      html.push(slides[(currentIndex + ++offset) % slides.length]);
+      if (window.matchMedia("(min-width: 1024px)").matches) {
+        html.push(slides[(currentIndex + ++offset) % slides.length]);
+        if (window.matchMedia("(min-width: 1280px)").matches) {
+          html.push(slides[(currentIndex + ++offset) % slides.length]);
+        }
+      }
+    }
+  }
+
+  const gap = offset * 10;
+  const padding = 20;
+  let currentWidth = (offset + 1) * 160 + gap + padding + "px";
+
+  carouselTrack.style.maxWidth = currentWidth;
+  html.push(slides[(currentIndex + ++offset) % slides.length]); // hidden slide
+  html.push(frameCloseTag);
+  carouselTrack.innerHTML = html.join("");
+
+  currentIndex = (currentIndex + 1) % slides.length;
+}
+
+function renderSlidesRight() {
+  const html = [];
+  html.push(frameOpenTagR);
+  html.push(slides[(currentIndex - 1 + slides.length) % slides.length]); // hidden slide
+  html.push(slides[currentIndex]);
+  let offset = 0;
+
+  if (window.matchMedia("(min-width: 425px)").matches) {
+    html.push(slides[(currentIndex + ++offset) % slides.length]);
+    if (window.matchMedia("(min-width: 768px)").matches) {
+      html.push(slides[(currentIndex + ++offset) % slides.length]);
+      if (window.matchMedia("(min-width: 1024px)").matches) {
+        html.push(slides[(currentIndex + ++offset) % slides.length]);
+        if (window.matchMedia("(min-width: 1280px)").matches) {
+          html.push(slides[(currentIndex + ++offset) % slides.length]);
+        }
+      }
+    }
+  }
+
+  const gap = offset * 10;
+  const padding = 20;
+  let currentWidth = (offset + 1) * 160 + gap + padding + "px";
+
+  carouselTrack.style.maxWidth = currentWidth;
+  html.push(frameCloseTag);
+  carouselTrack.innerHTML = html.join("");
+
+  currentIndex = (currentIndex - 1 + slides.length) % slides.length;
 }
 
 function slideLeft() {
-  currentIndex = (currentIndex + 1) % slides.length;
-  renderSlides();
+  framePositionX = -160;
+  renderSlidesLeft();
+  setTimeout(translate);
 }
 
 function slideRight() {
-  currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-  renderSlides();
+  framePositionX = 10;
+  renderSlidesRight();
+  setTimeout(translate);
 }
 
-renderSlides();
+function translate() {
+  frame = document.querySelector(".brand-carousel__frame");
+  frame.style.transform = `translateX(${framePositionX}px)`;
+  framePositionX = 0;
+}
