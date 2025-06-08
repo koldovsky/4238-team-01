@@ -43,6 +43,7 @@ img {
   --bg-color: #3e4355;
   --background-section-light: #f9f9f9;
   --background-section-dark: #3e4355;
+  --background-section-alt-light: rgba(249, 249, 249, 0.9);
   --background-section-alt-dark: rgba(37, 43, 63, 0.92);
 
   /* Cards */
