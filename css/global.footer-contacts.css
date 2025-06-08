@@ -23,7 +23,7 @@
 .footer-contacts__title {
   text-transform: uppercase;
   color: var(--brand-color);
-  font-size: 12px;
+  font-size: 13px;
   letter-spacing: 1px;
   margin-bottom: 2rem;
 }
