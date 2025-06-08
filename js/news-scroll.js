@@ -12,11 +12,13 @@ if (hash === "#news") {
 }
 
 const newsAnchor = document.querySelector('[href*="#news"]');
-const isOnIndex = window.location.pathname.includes('index.html') || window.location.pathname === '/';
+const isOnIndex =
+  window.location.pathname.includes("index.html") ||
+  window.location.pathname === "/";
 
 if (!isOnIndex && newsAnchor) {
-  newsAnchor.addEventListener('click', (event) => {
+  newsAnchor.addEventListener("click", (event) => {
     event.preventDefault();
-    window.location.href = 'index.html#news';
+    window.location.href = "index.html#news";
   });
 }
