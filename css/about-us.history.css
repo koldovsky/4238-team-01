@@ -71,7 +71,7 @@
   width: 100%;
 
   .history__image {
-    height: 1320px;
+    height: 1350px;
     object-fit: cover;
   }
 }
@@ -82,7 +82,7 @@
   display: grid;
   align-content: start;
   padding: 10%;
-  padding-top: 25%;
+  padding-top: 20%;
 }
 
 .history__title {
