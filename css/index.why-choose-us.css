@@ -66,6 +66,7 @@
   overflow: hidden;
   text-align: left;
   line-height: 1.5;
+  overflow-x: hidden;
 }
 
 .why-choose-us__card-icon {
