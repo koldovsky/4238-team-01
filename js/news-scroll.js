@@ -22,3 +22,16 @@ if (!isOnIndex && newsAnchor) {
     window.location.href = "index.html#news";
   });
 }
+
+//Request a Quote - smooth scroll
+const btnQuote = document.getElementById('btn-quote');
+
+btnQuote.addEventListener('click', function(event) {
+  event.preventDefault();              
+  const target = document.getElementById('contact');
+  if (!target) return;
+  target.scrollIntoView({
+    behavior: 'smooth',
+    block: 'start'      
+  });
+});
