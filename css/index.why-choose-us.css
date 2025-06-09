@@ -59,10 +59,9 @@
 .why-choose-us__card {
   border: 1px solid #eee;
   box-sizing: border-box;
-  width: 250;
   padding: 20px;
   text-align: left;
-  line-height: 1,5;
+  line-height: 1.5;
   align-items: stretch;
 }
 
