@@ -34,7 +34,7 @@
 
 .why-choose-us__description {
   font-size: 19px;
-  font-family: var(font-family);
+  font-family: var(--font-family);
   color: var(--subtitle-color);
   text-align: center;
   margin-bottom: 48px;
@@ -60,9 +60,12 @@
   border: 1px solid #eee;
   box-sizing: border-box;
   padding: 20px;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  overflow: hidden;
   text-align: left;
   line-height: 1.5;
-  align-items: stretch;
 }
 
 .why-choose-us__card-icon {
