@@ -60,14 +60,16 @@
   border: 1px solid #eee;
   box-sizing: border-box;
   width: 250;
-  height: 268px;
   padding: 20px;
   text-align: left;
-  line-height: 40px;
+  line-height: 1,5;
+  align-items: stretch;
 }
 
 .why-choose-us__card-icon {
   margin-bottom: 20px;
+  width: 70px;
+  height: 70px;
 }
 
 .why-choose-us__card-title {

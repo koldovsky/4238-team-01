@@ -56,6 +56,12 @@
   }
 }
 
+.news__card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
 .news__card-image {
   width: 100%;
   aspect-ratio: 370 / 238;
@@ -82,7 +88,8 @@
   font-size: 17px;
   font-family: var(--font-family);
   color: var(--text-color);
-  margin-bottom: 48px;
+  flex-grow: 1;
+  margin-bottom: 20px;
 }
 
 .news__card-button {
@@ -96,6 +103,8 @@
   background-color: transparent;
   border-radius: 0;
   text-align: center;
+  width: fit-content;
+  align-self: flex-start; 
 
   &:hover {
     background-color: var(--brand-color);
