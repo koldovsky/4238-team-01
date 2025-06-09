@@ -8,47 +8,42 @@
   position: relative;
   z-index: 1;
 
-  /* Заголовок блоку */
   .header-hero__title {
     font-family: var(--font-family);
     font-size: 13px;
     font-weight: bold;
     color: var(--brand-color);
     text-transform: uppercase;
-    margin-bottom: 24px; /* Відступ після "Law Firm" */
+    margin-bottom: 24px; 
   }
 
-  /* Заголовок в 2 рядки */
   .header-hero__subtitle {
     font-family: var(--title-font);
     font-size: 78px;
     font-weight: 500;
     color: var(--title-color);
-    line-height: 0.9; /* Більша висота рядка */
+    line-height: 0.9; 
 
     &:not(:last-of-type) {
-      margin-bottom: 20px; /* Відступ між "Use..." і "Legal..." */
+      margin-bottom: 20px; 
     }
   }
 
-  /* Опис під заголовком */
   .header-hero__description {
     font-family: var(--font-family);
     font-size: 19px;
     font-weight: 400;
     color: var(--title-color);
     margin-top: 40px;
-    margin-bottom: 50px; /* Відступ до кнопок */
+    margin-bottom: 50px; 
     line-height: 1.6;
   }
 
-  /* Контейнер кнопок */
   .header-hero__buttons {
     display: flex;
     gap: 20px;
   }
 
-  /* Кнопки */
   .header-hero__button {
     padding: 14px 28px;
     font-weight: 600;
@@ -57,7 +52,6 @@
     text-decoration: none;
   }
 
-  /* Кнопка з фоном */
   .header-hero__button--color {
     font-family: var(--font-family);
     color: var(--title-alt-color);
@@ -65,19 +59,17 @@
     border: none;
   }
   
-  /* Кнопка з рамкою */
   .header-hero__button--transparent {
     background-color: transparent;
     border: 2px solid var(--brand-color);
     color: var(--brand-color);
   }
 }
-/* Ховер для кнопки з фоном */
+
 .header-hero__button--color:hover {
   background-color: var(--subtitle-color); 
 }
 
-/* Ховер для кнопки з рамкою */
 .header-hero__button--transparent:hover {
   background-color: var(--brand-color);
   color: var(--title-alt-color);
