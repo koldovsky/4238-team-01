@@ -4,6 +4,7 @@ function init() {
   import("./global.brand-carousel.js"); // Dmytro Belevtsev
   import("./index.contact-us.js"); //Anastasiia Dubachynska
   import("./news-scroll.js"); // Levko Sviayoslav
+  import("./index.consultation.js"); // Olena Moroz
 }
 
 const totalPartials = document.querySelectorAll(

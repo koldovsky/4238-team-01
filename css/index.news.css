@@ -111,6 +111,7 @@
   background-color: transparent;
   border-radius: 0;
   text-align: center;
+  text-decoration: none;
   width: fit-content;
   align-self: flex-start;
   transition: all 0.3s ease;
