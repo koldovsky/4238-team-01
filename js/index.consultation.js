@@ -47,5 +47,10 @@ function prevSlide() {
   renderSlides();
 }
 
-renderSlides(); //
-setInterval(nextSlide, 5000);
+const btnNext = document.querySelector(".consultation__slider-button--next");
+const btnPrev = document.querySelector(".consultation__slider-button--prev");
+
+btnNext.addEventListener("click", nextSlide);
+btnPrev.addEventListener("click", prevSlide);
+
+renderSlides();
